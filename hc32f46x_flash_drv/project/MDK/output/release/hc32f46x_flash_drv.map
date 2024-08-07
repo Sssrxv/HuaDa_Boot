@@ -1,0 +1,71 @@
+Component: ARM Compiler 5.06 update 7 (build 960) Tool: armlink [4d3601]
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x00000281
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00000920, Max: 0x00010000, ABSOLUTE, COMPRESSED[0x0000081c])
+
+    Execution Region ER_BOOT (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x000005e4, Max: 0x00010000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x00000280   Data   RO            3    RESET               startup_hc32f46x.o
+    0x00000280   0x00000280   0x00000000   Code   RO          385  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x00000280   0x00000280   0x00000004   Code   RO          388    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x00000284   0x00000284   0x00000004   Code   RO          391    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x00000288   0x00000288   0x00000000   Code   RO          393    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x00000288   0x00000288   0x00000000   Code   RO          395    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x00000288   0x00000288   0x00000008   Code   RO          396    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x00000290   0x00000290   0x00000004   Code   RO          403    .ARM.Collect$$$$0000000E  mc_w.l(entry12b.o)
+    0x00000294   0x00000294   0x00000000   Code   RO          398    .ARM.Collect$$$$0000000F  mc_w.l(entry10a.o)
+    0x00000294   0x00000294   0x00000000   Code   RO          400    .ARM.Collect$$$$00000011  mc_w.l(entry11a.o)
+    0x00000294   0x00000294   0x00000004   Code   RO          389    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x00000298   0x00000298   0x00000040   Code   RO            4    .text               startup_hc32f46x.o
+    0x000002d8   0x000002d8   0x00000024   Code   RO          404    .text               mc_w.l(init.o)
+    0x000002fc   0x000002fc   0x00000056   Code   RO          414    .text               mc_w.l(__dczerorl2.o)
+    0x00000352   0x00000352   0x00000002   PAD
+    0x00000354   0x00000354   0x00000050   Code   RO          320    i.EFM_SetWaitCycle  flash_sys.o
+    0x000003a4   0x000003a4   0x00000010   Code   RO          344    i.IAP_Init          iap.o
+    0x000003b4   0x000003b4   0x00000048   Code   RO          168    i.LED_Init          basic.o
+    0x000003fc   0x000003fc   0x00000002   Code   RO          409    i.__scatterload_null  mc_w.l(handlers.o)
+    0x000003fe   0x000003fe   0x00000002   PAD
+    0x00000400   0x00000400   0x00000020   Data   RO           75    .ARM.__AT_0x00000400  hc32f46x_icg.o
+    0x00000420   0x00000420   0x00000068   Code   RO          132    i.NVM_TestFlashDriver  nvm_flash.o
+    0x00000488   0x00000488   0x00000090   Code   RO          170    i.SystemClock_Init  basic.o
+    0x00000518   0x00000518   0x0000000c   Code   RO           14    i.SystemInit        system_hc32f46x.o
+    0x00000524   0x00000524   0x00000074   Code   RO          253    i.UART_Init         uart.o
+    0x00000598   0x00000598   0x0000000e   Code   RO          408    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x000005a6   0x000005a6   0x0000000e   Code   RO          410    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x000005b4   0x000005b4   0x0000000e   Code   RO           99    i.main              main.o
+    0x000005c2   0x000005c2   0x00000002   PAD
+    0x000005c4   0x000005c4   0x00000020   Data   RO          406    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x1fff8000, Load base: 0x000005e4, Size: 0x00000740, Max: 0x0002f000, ABSOLUTE, COMPRESSED[0x00000238])
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x1fff8000   COMPRESSED   0x0000033c   Data   RW          134    .data               nvm_flash.o
+    0x1fff833c   COMPRESSED   0x00000004   PAD
+    0x1fff8340        -       0x00000400   Zero   RW            1    STACK               startup_hc32f46x.o
+
+
+
+  Load Region LR_IROM2 (Base: 0x00010000, Size: 0x00000338, Max: 0x00010000, ABSOLUTE)
+
+    Execution Region RW_IROM_FlashDrvOffset (Exec base: 0x00010000, Load base: 0x00010000, Size: 0x00000008, Max: 0x00000008, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00010000   0x00010000   0x00000008   Data   RO          133    .Flash_Driver_Section_Offset  nvm_flash.o
+
+
+    Execution Region RW_IROM_FlashDrv (Exec base: 0x00010008, Load base: 0x00010008, Size: 0x00000330, Max: 0x000005c4, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00010008   0x00010008   0x00000330   Code   RO          215    .Flash_Driver_Section  flash.o
+

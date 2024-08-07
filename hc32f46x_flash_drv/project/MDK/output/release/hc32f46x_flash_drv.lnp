@@ -1,0 +1,14 @@
+--cpu=Cortex-M4.fp.sp
+".\output\release\startup_hc32f46x.o"
+".\output\release\system_hc32f46x.o"
+".\output\release\hc32f46x_icg.o"
+".\output\release\main.o"
+".\output\release\nvm_flash.o"
+".\output\release\basic.o"
+".\output\release\flash.o"
+".\output\release\uart.o"
+".\output\release\flash_sys.o"
+".\output\release\iap.o"
+--library_type=microlib --strict --scatter ".\output\release\hc32f46x_boot.sct"
+--keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info
+--list ".\output\release\hc32f46x_flash_drv.map" -o .\output\release\hc32f46x_flash_drv.axf

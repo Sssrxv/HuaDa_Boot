@@ -1,0 +1,12 @@
+.\output\release\uart.o: ..\..\driver\uart.c
+.\output\release\uart.o: ..\..\driver\uart.h
+.\output\release\uart.o: ..\..\common\hc32_common.h
+.\output\release\uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\output\release\uart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\release\uart.o: ..\..\common\hc32f46x.h
+.\output\release\uart.o: E:\keilpack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h
+.\output\release\uart.o: E:\keilpack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\output\release\uart.o: E:\keilpack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\output\release\uart.o: E:\keilpack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\output\release\uart.o: E:\keilpack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h
+.\output\release\uart.o: ..\..\common\system_hc32f46x.h

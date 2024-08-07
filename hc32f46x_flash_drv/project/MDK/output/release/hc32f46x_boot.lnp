@@ -1,0 +1,13 @@
+--cpu=Cortex-M4.fp.sp
+".\output\release\startup_hc32f46x.o"
+".\output\release\system_hc32f46x.o"
+".\output\release\hc32f46x_icg.o"
+".\output\release\main.o"
+".\output\release\basic.o"
+".\output\release\flash.o"
+".\output\release\uart.o"
+".\output\release\iap.o"
+".\output\release\modem.o"
+--library_type=microlib --strict --scatter ".\output\release\hc32f46x_boot.sct"
+--keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info
+--list ".\output\release\hc32f46x_boot.map" -o .\output\release\hc32f46x_boot.axf

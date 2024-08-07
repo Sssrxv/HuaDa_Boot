@@ -1,0 +1,13 @@
+"F:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\bin\armproc.dll" 
+
+"F:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\bin\armjlink2.dll" 
+
+"C:\Users\Administrator\Desktop\hc32f460_iap_20190617\hc32f460_iap\hc32f46x_app\project\EWARM\output\release\Exe\hc32f46x_app.out" 
+
+--plugin "F:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\arm\bin\armbat.dll" 
+
+--flash_loader "C:\Users\Administrator\Desktop\hc32f460_iap_20190617\hc32f460_iap\hc32f46x_app\project\EWARM\config\flashloader\HC32F46x.board" 
+
+
+
+

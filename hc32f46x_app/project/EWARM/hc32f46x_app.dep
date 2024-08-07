@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>3762350389</fileChecksum>
+  <configuration>
+    <name>Release</name>
+    <outputs>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$PROJ_DIR$\output\release\Obj\main.o</file>
+      <file>$PROJ_DIR$\config\HC32F46x_app.icf</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$PROJ_DIR$\output\release\Obj\main.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
+      <file>$PROJ_DIR$\..\..\common\hc32_ddl.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$PROJ_DIR$\output\release\Exe\hc32f46x_app.out</file>
+      <file>$PROJ_DIR$\output\release\Obj\hc32f46x_utility.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\Obj\hc32f46x_gpio.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+      <file>$PROJ_DIR$\output\release\Obj\system_hc32f46x.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cm4.h</file>
+      <file>$PROJ_DIR$\..\..\driver\inc\hc32f46x_gpio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmSimd.h</file>
+      <file>$PROJ_DIR$\output\release\Obj\hc32f46x_utility.o</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tlf.a</file>
+      <file>$PROJ_DIR$\output\release\Obj\hc32f46x_app.pbd</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\..\..\driver\inc\hc32f46x_utility.h</file>
+      <file>$PROJ_DIR$\..\..\common\hc32_common.h</file>
+      <file>$PROJ_DIR$\..\..\common\system_hc32f46x.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\..\..\common\hc32f46x.h</file>
+      <file>$PROJ_DIR$\..\source\ddl_config.h</file>
+      <file>$PROJ_DIR$\..\..\driver\src\hc32f46x_utility.c</file>
+      <file>$PROJ_DIR$\output\release\Obj\hc32f46x_gpio.o</file>
+      <file>$PROJ_DIR$\startup_hc32f46x.s</file>
+      <file>$PROJ_DIR$\output\release\Obj\system_hc32f46x.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmFunc.h</file>
+      <file>$TOOLKIT_DIR$\CMSIS\Include\core_cmInstr.h</file>
+      <file>$PROJ_DIR$\..\..\common\system_hc32f46x.c</file>
+      <file>$PROJ_DIR$\..\source\main.c</file>
+      <file>$PROJ_DIR$\..\..\driver\src\hc32f46x_gpio.c</file>
+      <file>$PROJ_DIR$\output\release\Exe\hc32f46x_app.bin</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\output\release\Obj\startup_hc32f46x.o</file>
+      <file>$PROJ_DIR$\output\release\Obj\system_hc32f46x.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\..\..\driver\inc\hc32f46x_icg.h</file>
+      <file>$PROJ_DIR$\output\release\Obj\hc32f46x_gpio.__cstat.et</file>
+      <file>$PROJ_DIR$\output\release\List\hc32f46x_app.map</file>
+      <file>$PROJ_DIR$\output\release\Obj\hc32f46x_utility.pbi</file>
+      <file>$PROJ_DIR$\output\release\Obj\main.pbi</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\output\release\Exe\hc32f46x_app.out</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 53</file>
+        </tool>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 46</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 2 36 23 1 48 49 24 39 0 25</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\driver\src\hc32f46x_utility.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 11</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31 29 15 20 14 50 18 3 21 33 7 6 40 34 5 32 30 27 13 17 47 41 28 42 22 9</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 28 29 3 20 50 13 7 31 17 47 14 27 5 6 15 32 21 33 18 42 9 40 41 22 30 34</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\startup_hc32f46x.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\common\system_hc32f46x.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 49</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27 9 5 30 17 50 20 42 32 13 47 14 3 15 21 33 7 31 6 18 22 29 41 40</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 29 3 20 50 13 7 31 17 47 14 27 5 6 15 32 21 33 18 42 9 40 41 22 30</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\source\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 4</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 1</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8 29 3 20 50 13 7 31 17 47 14 27 5 6 15 32 21 33 18 42 9 40 41 22 30 34 19 51 28</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\driver\src\hc32f46x_gpio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 52</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 36</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29 13 32 50 47 20 14 5 30 27 17 41 34 28 3 15 21 33 7 31 6 18 40 19 42 22 9</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 19 29 3 20 50 13 7 31 17 47 14 27 5 6 15 32 21 33 18 42 9 40 41 22 30 34 28</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 10 53</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>debug</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

@@ -1,0 +1,9 @@
+--cpu=Cortex-M4.fp.sp
+".\output\release\startup_hc32f46x.o"
+".\output\release\system_hc32f46x.o"
+".\output\release\main.o"
+".\output\release\hc32f46x_gpio.o"
+".\output\release\hc32f46x_utility.o"
+--library_type=microlib --strict --scatter ".\output\release\hc32f46x_app.sct"
+--keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info
+--list ".\output\release\hc32f46x_app.map" -o .\output\release\hc32f46x_app.axf

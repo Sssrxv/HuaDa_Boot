@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "iap.h": "c",
+        "nvm_flash.h": "c",
+        "stdio.h": "c",
+        "flash.h": "c"
+    }
+}

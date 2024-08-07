@@ -1,0 +1,12 @@
+.\output\release\hc32f46x_icg.o: ..\..\common\hc32f46x_icg.c
+.\output\release\hc32f46x_icg.o: ..\..\common\hc32f46x_icg.h
+.\output\release\hc32f46x_icg.o: ..\..\common\hc32_common.h
+.\output\release\hc32f46x_icg.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\output\release\hc32f46x_icg.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\release\hc32f46x_icg.o: ..\..\common\hc32f46x.h
+.\output\release\hc32f46x_icg.o: E:\keilpack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h
+.\output\release\hc32f46x_icg.o: E:\keilpack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\output\release\hc32f46x_icg.o: E:\keilpack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\output\release\hc32f46x_icg.o: E:\keilpack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\output\release\hc32f46x_icg.o: E:\keilpack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h
+.\output\release\hc32f46x_icg.o: ..\..\common\system_hc32f46x.h

@@ -1,0 +1,14 @@
+.\output\release\nvm_flash.o: ..\source\NVM_Flash.c
+.\output\release\nvm_flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\output\release\nvm_flash.o: ..\..\driver\flash.h
+.\output\release\nvm_flash.o: ..\..\common\hc32_common.h
+.\output\release\nvm_flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+.\output\release\nvm_flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\output\release\nvm_flash.o: ..\..\common\hc32f46x.h
+.\output\release\nvm_flash.o: E:\keilpack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h
+.\output\release\nvm_flash.o: E:\keilpack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\output\release\nvm_flash.o: E:\keilpack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\output\release\nvm_flash.o: E:\keilpack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\output\release\nvm_flash.o: E:\keilpack\ARM\CMSIS\5.7.0\CMSIS\Core\Include\mpu_armv7.h
+.\output\release\nvm_flash.o: ..\..\common\system_hc32f46x.h
+.\output\release\nvm_flash.o: ..\source\NVM_Flash.h
