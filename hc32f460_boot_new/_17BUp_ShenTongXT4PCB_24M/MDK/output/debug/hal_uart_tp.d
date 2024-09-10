@@ -1,0 +1,10 @@
+.\output\debug\hal_uart_tp.o: ..\Hal\hal_uart_tp.c
+.\output\debug\hal_uart_tp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\output\debug\hal_uart_tp.o: ..\Hal\hal_uart_tp.h
+.\output\debug\hal_uart_tp.o: ..\Hal\hal_uart_tp_cfg.h
+.\output\debug\hal_uart_tp.o: ../source/common.h
+.\output\debug\hal_uart_tp.o: ..\Hal\multi_cyc_fifo.h
+.\output\debug\hal_uart_tp.o: ../source/common.h
+.\output\debug\hal_uart_tp.o: ..\Hal\hal_tp_cfg.h
+.\output\debug\hal_uart_tp.o: ../source/common.h
+.\output\debug\hal_uart_tp.o: ../source/common.h
