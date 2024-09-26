@@ -5,6 +5,7 @@
 #include "app_uds_cfg.h"
 #include "hal_flash_cfg.h"
 #include "hal_flash.h"
+#include "hal_wdt.h"
 
 typedef enum
 {
@@ -210,7 +211,7 @@ static void RestoreOperateFlashActiveJob(const tFlshJobModle i_activeJob);
 static tFlshJobModle Flash_GetOperateFlashActiveJob(void);
 static tAPPType DoCheckNewestAPPInfo(const tAppFlashStatus *i_pAppAInfo, const tAppFlashStatus *i_pAppBInfo);
 static tAPPType DoCheckNewestAPPCnt(const tAppFlashStatus *i_pAppAInfo, const tAppFlashStatus *i_pAppBInfo);
-static uint8_t SavedFlashData(const uint8_t *i_pDataBuf, const uint8_t i_dataLen);
+static uint8_t SavedFlashData(const uint8_t *i_pDataBuf, const uint32_t i_dataLen);
 static tAPPType Flash_GetOldAPPType(void);
 static boolean IsFlashDriverSoftwareData(void);
 static void Flash_EraseFlashDriverInRAM_Inline(void);
@@ -363,6 +364,7 @@ uint8 Flash_WriteFlashAppInfo(void)
     // 获取最新应用类型
     newestAPPType = Flash_GetNewestAPPType();
     // 获取旧应用程序的信息（起始地址和长度）
+    // result = HAL_FLASH_GetAPPInfo_Info(oldAppType, &appInfoStartAddr, &appInfoLen);
     result = HAL_FLASH_GetAPPInfo(oldAppType, &appInfoStartAddr, &appInfoLen);
 
     if (TRUE == result) // 如果获取信息成功
@@ -373,7 +375,7 @@ uint8 Flash_WriteFlashAppInfo(void)
         HAL_FLASH_GetResetHandlerInfo(&bIsEnableWriteResetHandlerInFlash, &resetHandlerOffset, &resetHandlerLength);
 
         /* 更新应用程序计数 */
-        if (TRUE == HAL_FLASH_GetAPPInfo(newestAPPType, &newestAPPInfoStartAddr, &newestAPPInfoLen))
+        if (TRUE == HAL_FLASH_GetAPPInfo_Info(newestAPPType, &newestAPPInfoStartAddr, &newestAPPInfoLen))
         {
             // 获取最新的应用程序状态
             pstNewestAPPFlashStatus = (tAppFlashStatus *)newestAPPInfoStartAddr;
@@ -385,7 +387,7 @@ uint8 Flash_WriteFlashAppInfo(void)
                 pAppStatusPtr->appCnt = 0u;
             }
 
-            /* 从Flash中获取应用程序的起始地址（旧应用，因为新应用信息还未写入） */
+            /* 从Flash中获取应用程序的起始地址（旧应用，因为新应用信息还未写入） 由于分区方案需要重定位 */
             resetHandleAddr = appInfoStartAddr + resetHandlerOffset;
             // 保存复位处理程序地址和长度
             SaveAppResetHandlerAddr(*((uint32 *)resetHandleAddr), resetHandlerLength);
@@ -397,10 +399,21 @@ uint8 Flash_WriteFlashAppInfo(void)
 
         // 检查Flash操作API是否有效，并写入应用程序状态信息到Flash
         if ((NULL_PTR != gs_stFlashDownloadInfo.stFlashOperateAPI.pfProgramData) && (NULL_PTR != pAppStatusPtr))
-        {
-            result = gs_stFlashDownloadInfo.stFlashOperateAPI.pfProgramData(appInfoStartAddr,
-                     (uint8 *)pAppStatusPtr,
-                     sizeof(tAppFlashStatus)); // 将应用程序状态结构体写入Flash
+        {    
+            /* 对APP信息区域进行擦除 */
+            if(oldAppType == APP_A_TYPE) {
+                result = gs_stFlashDownloadInfo.stFlashOperateAPI.pfEraserSecotr(APP_A_INFO_START_ADDR, 1u);
+
+                result = gs_stFlashDownloadInfo.stFlashOperateAPI.pfProgramData(APP_A_INFO_START_ADDR,
+                        (uint8 *)pAppStatusPtr,
+                        sizeof(tAppFlashStatus)); // 将应用程序状态结构体写入Flash
+            } else {
+                result = gs_stFlashDownloadInfo.stFlashOperateAPI.pfEraserSecotr(APP_B_INFO_START_ADDR, 1u);
+
+                result = gs_stFlashDownloadInfo.stFlashOperateAPI.pfProgramData(APP_B_INFO_START_ADDR,
+                        (uint8 *)pAppStatusPtr,
+                        sizeof(tAppFlashStatus)); // 将应用程序状态结构体写入Flash
+            }
         }
         else
         {
@@ -470,8 +483,8 @@ tAPPType Flash_GetNewestAPPType(void)
 #ifndef EN_SUPPORT_APP_B
     return APP_A_TYPE;
 #else
-    HAL_FLASH_GetAPPInfo(APP_A_TYPE, &appInfoStartAddr_A, &appInfoBlockSize_A);
-    HAL_FLASH_GetAPPInfo(APP_B_TYPE, &appInfoStartAddr_B, &appInfoBlockSize_B);
+    HAL_FLASH_GetAPPInfo_Info(APP_A_TYPE, &appInfoStartAddr_A, &appInfoBlockSize_A);
+    HAL_FLASH_GetAPPInfo_Info(APP_B_TYPE, &appInfoStartAddr_B, &appInfoBlockSize_B);
     /* Read APP A info */
     appAInfo = *(tAppFlashStatus *)appInfoStartAddr_A;
     /* Read APP B info */
@@ -532,7 +545,7 @@ uint8_t Flash_ProgramRegion(const uint32_t i_addr,
                           const uint8_t *i_pDataBuf,
                           const uint32_t i_dataLen)
 {
-    uint8_t dataLen = (uint8_t)i_dataLen;
+    uint32_t dataLen = i_dataLen;
     uint8_t result = TRUE;
     result = TRUE;
 
@@ -573,6 +586,12 @@ uint8_t Flash_ProgramRegion(const uint32_t i_addr,
     }
 
     return result;
+}
+
+/* Get rest hander address */
+uint32 Flash_GetResetHandlerAddr(void)
+{
+    return gs_stAppFlashStatus.appStartAddr;
 }
 
 /* Save download data information, the API called by UDS request download service */
@@ -617,7 +636,7 @@ static void Flash_SetNextDownloadStep_Inline(const tFlDownloadStepType i_donwloa
 }
 
 /* Save flash data buffer */
-static uint8_t SavedFlashData(const uint8_t *i_pDataBuf, const uint8_t i_dataLen)
+static uint8_t SavedFlashData(const uint8_t *i_pDataBuf, const uint32_t i_dataLen)
 {
     if (i_dataLen > MAX_FLASH_DATA_LEN)
     {
@@ -668,6 +687,8 @@ static uint8_t FlashErase(boolean *o_pbIsOperateFinsh)
     uint32_t eraseFlashStartAddr = 0u;
     uint32_t eraseSectorNoTmp = 0u;
 
+    uint8_t test_arr[20] = {1};
+
     /* Check flash driver valid or not? */
     if (TRUE != IsFlashDriverDownload())
     {
@@ -697,7 +718,6 @@ static uint8_t FlashErase(boolean *o_pbIsOperateFinsh)
         case DO_ERASING_FLASH:
             /* 确认当前app需要多少扇区 */
             totalSectors = HAL_FLASH_GetTotalSectors(s_appType);
-
             /* One time erase all flash sectors */
             if (totalSectors <= maxEraseSectors)
             {
@@ -706,9 +726,9 @@ static uint8_t FlashErase(boolean *o_pbIsOperateFinsh)
                     eraseFlashLen = s_pAppFlashMemoryInfo->xBlockEndLogicalAddr -
                                     s_pAppFlashMemoryInfo->xBlockStartLogicalAddr;
                     /* Feed watch dog */
-                    // WATCHDOG_HAL_Feed();
+                    HAL_WDT_FeedDog();
                     sectorNo = HAL_FLASH_GetFlashLengthToSectors(s_pAppFlashMemoryInfo->xBlockStartLogicalAddr, eraseFlashLen);
-
+                    
                     if (NULL_PTR != gs_stFlashDownloadInfo.stFlashOperateAPI.pfEraserSecotr)
                     {
                         /* Disable all interrupts */
@@ -720,9 +740,10 @@ static uint8_t FlashErase(boolean *o_pbIsOperateFinsh)
                         while (eraseSectorNoTmp)
                         {
                             /* Feed watch dog */
-                            // WATCHDOG_HAL_Feed();
+                            HAL_WDT_FeedDog();
                             /* Do erase flash */
                             s_result = gs_stFlashDownloadInfo.stFlashOperateAPI.pfEraserSecotr(eraseFlashStartAddr, 1u);
+
                             eraseSectorNoTmp--;
 
                             if (TRUE != s_result)
@@ -756,7 +777,7 @@ static uint8_t FlashErase(boolean *o_pbIsOperateFinsh)
                 while ((s_eraseSectorsCnt < totalSectors) && (0u != s_appFlashItem))
                 {
                     /* Feed watch dog */
-                    //WATCHDOG_HAL_Feed();
+                    HAL_WDT_FeedDog();
 
                     /* Get erase sector start address */
                     if (TRUE != HAL_FLASH_SectorNumberToFlashAddress(s_appType, s_eraseSectorsCnt, &eraseFlashStartAddr))
@@ -819,7 +840,7 @@ static uint8_t FlashErase(boolean *o_pbIsOperateFinsh)
                         while (eraseSectorNoTmp)
                         {
                             /* Feed watch dog */
-                            //WATCHDOG_HAL_Feed();
+                            HAL_WDT_FeedDog();
                             /* Do erase flash */
                             s_result = gs_stFlashDownloadInfo.stFlashOperateAPI.pfEraserSecotr(eraseFlashStartAddr, 1u);
                             eraseSectorNoTmp--;
@@ -880,13 +901,14 @@ static uint8_t FlashErase(boolean *o_pbIsOperateFinsh)
 
                 CreateAndSaveAppStatusCrc(&xCountCrc);
                 s_eraseSectorsCnt = 0u;
+                
                 SetEraseFlashStep(END_ERASE_FLASH);
             }
 
             break;
 
         case END_ERASE_FLASH:
-            //WATCHDOG_HAL_Feed();
+            HAL_WDT_FeedDog();
             s_pAppFlashMemoryInfo = NULL_PTR;
             s_appFlashItem = 0u;
             s_eraseSectorsCnt = 0u;
@@ -933,7 +955,7 @@ static uint8 FlashWrite(boolean *o_pbIsOperateFinsh)
         if ((TRUE == IsFlashEraseSuccessful()) &&
                 (TRUE == IsFlashStructValid()))
         {
-            // WATCHDOG_HAL_Feed();
+            HAL_WDT_FeedDog();
 
             /* Write data in flash */
             if (NULL_PTR != gs_stFlashDownloadInfo.stFlashOperateAPI.pfProgramData)
@@ -1017,7 +1039,7 @@ static uint8 FlashWrite(boolean *o_pbIsOperateFinsh)
 static uint8 FlashChecksum(boolean *o_pbIsOperateFinsh)
 {
     tCrc xCountCrc = 0u;
-    //WATCHDOG_HAL_Feed();
+    HAL_WDT_FeedDog();
 
     /* Reserved the if and else for external flash memory, like external flash need to flash driver read or write. */
     if ((TRUE == IsFlashDriverSoftwareData()) )
@@ -1037,7 +1059,7 @@ static uint8 FlashChecksum(boolean *o_pbIsOperateFinsh)
     }
 
     /* Feed watch dog */
-    // WATCHDOG_HAL_Feed();
+    HAL_WDT_FeedDog();
     if (gs_stFlashDownloadInfo.receivedCRC == xCountCrc)
     {
         if ((TRUE == IsFlashDriverSoftwareData()))
@@ -1081,8 +1103,8 @@ static tAPPType Flash_GetOldAPPType(void)
 #ifndef EN_SUPPORT_APP_B
     return APP_A_TYPE;
 #else
-    HAL_FLASH_GetAPPInfo(APP_A_TYPE, &appInfoStartAddr_A, &appInfoBlockSize_A);
-    HAL_FLASH_GetAPPInfo(APP_B_TYPE, &appInfoStartAddr_B, &appInfoBlockSize_B);
+    HAL_FLASH_GetAPPInfo_Info(APP_A_TYPE, &appInfoStartAddr_A, &appInfoBlockSize_A);
+    HAL_FLASH_GetAPPInfo_Info(APP_B_TYPE, &appInfoStartAddr_B, &appInfoBlockSize_B);
     /* Read APP A info */
     appAInfo = *(tAppFlashStatus *)appInfoStartAddr_A;
     /* Read APP B info */
@@ -1266,7 +1288,7 @@ static void ReadNewestAppInfoFromFlash(void)
     uint32 appInfoBlocksize = 0u;
     boolean result = FALSE;
     newestAppType = Flash_GetNewestAPPType();
-    result = HAL_FLASH_GetAPPInfo(newestAppType, &appInfoStart, &appInfoBlocksize);
+    result = HAL_FLASH_GetAPPInfo_Info(newestAppType, &appInfoStart, &appInfoBlocksize);
 
     if ((sizeof(tAppFlashStatus) <= appInfoBlocksize) && (TRUE == result))
     {

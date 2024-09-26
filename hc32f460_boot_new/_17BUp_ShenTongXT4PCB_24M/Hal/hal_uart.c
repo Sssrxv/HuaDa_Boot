@@ -162,3 +162,4 @@ static void CheckUARTTranmittedStatus(void)
         g_stTxMsgConfig.pfCallBack = NULL;
     }
 }
+

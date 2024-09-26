@@ -34,5 +34,6 @@
 .\output\debug\app_uds_alg.o: ..\Drivers\inc\hc32_ll_tmra.h
 .\output\debug\app_uds_alg.o: ..\Drivers\inc\hc32_ll_usart.h
 .\output\debug\app_uds_alg.o: ..\Drivers\inc\hc32_ll_utility.h
+.\output\debug\app_uds_alg.o: ..\Drivers\inc\hc32_ll_wdt.h
 .\output\debug\app_uds_alg.o: ..\APP\AES.h
 .\output\debug\app_uds_alg.o: ../source/common.h

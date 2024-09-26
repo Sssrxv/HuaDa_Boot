@@ -48,6 +48,7 @@
 ".\output\debug\uart.o"
 ".\output\debug\time.o"
 ".\output\debug\flash.o"
+".\output\debug\wdt.o"
 ".\output\debug\hal_tp_cfg.o"
 ".\output\debug\hal_uart.o"
 ".\output\debug\hal_uart_tp_cfg.o"
@@ -57,12 +58,15 @@
 ".\output\debug\hal_crc.o"
 ".\output\debug\hal_flash.o"
 ".\output\debug\hal_flash_cfg.o"
+".\output\debug\hal_wdt.o"
 ".\output\debug\aes.o"
 ".\output\debug\app_bootloader.o"
 ".\output\debug\app_flash.o"
 ".\output\debug\app_uds.o"
 ".\output\debug\app_uds_alg.o"
 ".\output\debug\app_uds_cfg.o"
+".\output\debug\app_boot.o"
+".\output\debug\app_boot_cfg.o"
 --library_type=microlib --strict --scatter ".\config\linker\HC32F460xE.sct"
 --keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

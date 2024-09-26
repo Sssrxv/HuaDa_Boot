@@ -30,3 +30,4 @@
 .\output\debug\hc32_ll.o: ..\Drivers\inc\hc32_ll_tmra.h
 .\output\debug\hc32_ll.o: ..\Drivers\inc\hc32_ll_usart.h
 .\output\debug\hc32_ll.o: ..\Drivers\inc\hc32_ll_utility.h
+.\output\debug\hc32_ll.o: ..\Drivers\inc\hc32_ll_wdt.h

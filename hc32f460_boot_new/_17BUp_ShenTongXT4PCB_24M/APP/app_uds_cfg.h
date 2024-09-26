@@ -66,7 +66,7 @@ typedef struct
 {
     tUdsId xUdsId;
     tUdsLen xDataLen;
-    uint8_t aDataBuf[150u];
+    uint8_t aDataBuf[1024u];        /* ÐÞ¸Ä´Ó150---->1024 */               
     void (*pfUDSTxMsgServiceCallBack)(uint8_t); /* TX message callback */
 } tUdsAppMsgInfo;
 
@@ -106,5 +106,7 @@ void SetNegativeErroCode(const uint8_t i_UDSServiceNum,
                          tUdsAppMsgInfo *m_pstPDUMsg);
 
 uint32 UDS_GetUDSS3WatermarkTimerMs(void);
+
+boolean UDS_TxMsgToHost(void);
 
 #endif /* UDS_APP_CFG_H_ */

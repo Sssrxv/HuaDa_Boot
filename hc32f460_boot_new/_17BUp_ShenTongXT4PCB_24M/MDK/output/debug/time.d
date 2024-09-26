@@ -32,3 +32,10 @@
 .\output\debug\time.o: ..\Drivers\inc\hc32_ll_tmra.h
 .\output\debug\time.o: ..\Drivers\inc\hc32_ll_usart.h
 .\output\debug\time.o: ..\Drivers\inc\hc32_ll_utility.h
+.\output\debug\time.o: ..\Drivers\inc\hc32_ll_wdt.h
+.\output\debug\time.o: ..\BSP\wdt.h
+.\output\debug\time.o: ../source/common.h
+.\output\debug\time.o: ..\BSP\ev_hc32f460_lqfp100_v2_bsp.h
+.\output\debug\time.o: ..\BSP\ev_hc32f460_lqfp100_v2.h
+.\output\debug\time.o: ..\Drivers\inc\hc32_ll_aos.h
+.\output\debug\time.o: ..\Drivers\inc\hc32_ll_dma.h

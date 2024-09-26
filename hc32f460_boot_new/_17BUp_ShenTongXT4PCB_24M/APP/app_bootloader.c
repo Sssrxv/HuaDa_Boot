@@ -4,7 +4,9 @@
 #include "app_uds.h"
 #include "hal_tp_cfg.h"
 #include "app_flash.h"
+#include "APP_boot.h"
 #include "time.h"
+#include "app_boot_cfg.h"
 
 void UDS_MAIN_Init(void (*pfBSP_Init)(void), void (*pfAbortTxMsg)(void))
 {
@@ -13,12 +15,8 @@ void UDS_MAIN_Init(void (*pfBSP_Init)(void), void (*pfAbortTxMsg)(void))
     //     Boot_PowerONClearAllFlag();
     // }
 
-    // if (TRUE == POWER_SYS_GetResetSrcStatusCmd(RCM, RCM_WATCH_DOG))
-    // {
-    //     Boot_JumpToAppOrNot();
-    // }
-
-
+    Boot_JumpToAppOrNot();
+    
     if (NULL_PTR != pfBSP_Init)
     {
         (*pfBSP_Init)();
@@ -39,7 +37,7 @@ void UDS_MAIN_Init(void (*pfBSP_Init)(void), void (*pfAbortTxMsg)(void))
 
     UDS_Init();
 
-    // // Boot_CheckReqBootloaderMode();
+    Boot_CheckReqBootloaderMode();
 
     TP_RegisterAbortTxMsg(pfAbortTxMsg);
     FLASH_APP_Init();
@@ -56,7 +54,7 @@ void UDS_MAIN_Process(void)
     if (TRUE == BSP_TIMER_Is100msTickTimeout())
     {
         /* Feed watch dog every 100ms */
-        // WATCHDOG_HAL_Feed();
+        HAL_WDT_FeedDog();
     }
 
     HAL_TP_MainFun();

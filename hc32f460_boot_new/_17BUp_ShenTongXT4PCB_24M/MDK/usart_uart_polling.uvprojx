@@ -648,6 +648,11 @@
               <FileType>1</FileType>
               <FilePath>..\BSP\flash.c</FilePath>
             </File>
+            <File>
+              <FileName>wdt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\wdt.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -698,6 +703,11 @@
               <FileType>1</FileType>
               <FilePath>..\Hal\hal_flash_cfg.c</FilePath>
             </File>
+            <File>
+              <FileName>hal_wdt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hal\hal_wdt.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -732,6 +742,16 @@
               <FileName>app_uds_cfg.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\APP\app_uds_cfg.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_boot.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_boot.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_boot_cfg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_boot_cfg.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1378,6 +1398,11 @@
               <FileType>1</FileType>
               <FilePath>..\BSP\flash.c</FilePath>
             </File>
+            <File>
+              <FileName>wdt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\wdt.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1428,6 +1453,11 @@
               <FileType>1</FileType>
               <FilePath>..\Hal\hal_flash_cfg.c</FilePath>
             </File>
+            <File>
+              <FileName>hal_wdt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hal\hal_wdt.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1462,6 +1492,16 @@
               <FileName>app_uds_cfg.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\APP\app_uds_cfg.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_boot.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_boot.c</FilePath>
+            </File>
+            <File>
+              <FileName>app_boot_cfg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\app_boot_cfg.c</FilePath>
             </File>
           </Files>
         </Group>

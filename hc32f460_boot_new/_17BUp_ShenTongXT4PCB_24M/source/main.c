@@ -1,41 +1,42 @@
 #include <stdio.h>
 #include "main.h"
 #include "app_bootloader.h"
+#include "hal_wdt.h"
 /* unlock/lock peripheral */
 
 #define EXAMPLE_PERIPH_WE								LL_PERIPH_ALL
 #define EXAMPLE_PERIPH_WP								LL_PERIPH_ALL
 
-#define SCB_VTOR_TBLOFF_Pos                 7U                                            /*!< SCB VTOR: TBLOFF Position */
-#define SCB_VTOR_TBLOFF_Msk                (0x1FFFFFFUL << SCB_VTOR_TBLOFF_Pos)
+// #define SCB_VTOR_TBLOFF_Pos                 7U                                            /*!< SCB VTOR: TBLOFF Position */
+// #define SCB_VTOR_TBLOFF_Msk                (0x1FFFFFFUL << SCB_VTOR_TBLOFF_Pos)
 
-#define APP_ADDRESS   0x00010000
+// #define APP_ADDRESS   0x00042000
 
-#define RAM_SIZE                    0x2F000ul
-typedef void (*func_ptr_t)(void);
-uint32_t JumpAddress;
-func_ptr_t JumpToApplication;
+// #define RAM_SIZE                    0x2F000ul
+// typedef void (*func_ptr_t)(void);
+// uint32_t JumpAddress;
+// func_ptr_t JumpToApplication;
 
-static void IAP_JumpToApp(uint32_t u32Addr)
-{
-    uint32_t u32StackTop = *((__IO uint32_t *)u32Addr);
+// static void IAP_JumpToApp(uint32_t u32Addr)
+// {
+//     uint32_t u32StackTop = *((__IO uint32_t *)u32Addr);
 
-    /* Check if user code is programmed starting from address "u32Addr" */
-    /* Check stack top pointer. */
-    if ((u32StackTop > SRAM_BASE) && (u32StackTop <= (SRAM_BASE + RAM_SIZE)))
-    {
-        // IAP_ResetConfig();
-        /* Jump to user application */
-        JumpAddress = *(__IO uint32_t *)(u32Addr + 4);
-        JumpToApplication = (func_ptr_t)JumpAddress;
-        /* Initialize user application's Stack Pointer */
-        __set_MSP(*(__IO uint32_t *)u32Addr);
+//     /* Check if user code is programmed starting from address "u32Addr" */
+//     /* Check stack top pointer. */
+//     if ((u32StackTop > SRAM_BASE) && (u32StackTop <= (SRAM_BASE + RAM_SIZE)))
+//     {
+//         // IAP_ResetConfig();
+//         /* Jump to user application */
+//         JumpAddress = *(__IO uint32_t *)(u32Addr + 4);
+//         JumpToApplication = (func_ptr_t)JumpAddress;
+//         /* Initialize user application's Stack Pointer */
+//         __set_MSP(*(__IO uint32_t *)u32Addr);
         
-        SCB->VTOR = ((uint32_t) u32Addr & SCB_VTOR_TBLOFF_Msk);
+//         SCB->VTOR = ((uint32_t) u32Addr & SCB_VTOR_TBLOFF_Msk);
         
-        JumpToApplication();
-    }
-}
+//         JumpToApplication();
+//     }
+// }
 
 static void BSP_Init(void)
 {
@@ -50,11 +51,15 @@ static void BSP_Init(void)
     
     Uart_Init();
     
-    //HAL_TP_Init();
-
-    Timer0_Init_Template();
+    // HAL_TP_Init();
 
     HAL_TP_MainFun();
+
+    HAL_WDT_Config();
+        
+    HAL_WDT_FeedDog();
+
+    Timer0_Init_Template();
 
     LL_PERIPH_WP(EXAMPLE_PERIPH_WP);
 }

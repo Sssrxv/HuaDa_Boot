@@ -1,4 +1,5 @@
 #include "time.h"
+#include "wdt.h"
 
 static uint16_t gs_1msCnt = 0u;
 static uint16_t gs_100msCnt = 0u;
@@ -102,7 +103,7 @@ static void TIM0_A_CompareIrqCallback(void)			/* 1ms进入一次 */
     // TMR0_Stop(TIM0_A_UNIT, TIM0_A_CH);
     // TMR0_SetCountValue(TIM0_A_UNIT, TIM0_A_CH_INT, 0);
     // TMR0_SetCompareValue(TIM0_A_UNIT, TIM0_A_CH_INT, 2);
-
+    // BSP_WDT_FeedDog();
     if (0u != cntTmp)
     {
         gs_1msCnt++;

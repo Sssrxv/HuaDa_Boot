@@ -6,6 +6,15 @@
 /* Reset handler information */
 #define EN_WRITE_RESET_HANDLER_IN_FLASH (FALSE) /* Enable write reset handler in flash or not */
 
+typedef struct
+{
+    uint32 imageAStartAddr;        /* 映像A的起始地址 */
+    uint32 imageBStartAddr;        /* 映像B的起始地址 */
+    uint32 imageAMirrorAddr;       /* 映像A的镜像地址 */
+    uint32 imageBMirrorAddr;       /* 映像B的镜像地址 */
+    uint32 remapApplicationAddr;   /* 应用程序重映射地址 */
+} CoreInfo_t;
+
 /* Flash driver config */
 const BlockInfo_t gs_astFlashDriverBlock[] =
 {
@@ -21,6 +30,15 @@ const BlockInfo_t gs_astBlockNumA[] =
 /* Logical num */
 const uint32_t gs_blockNumA = sizeof(gs_astBlockNumA) / sizeof(gs_astBlockNumA[0u]);
 
+const BlockInfo_t gs_astBlockNumAppInfo[] =
+{
+    {APP_A_INFO_START_ADDR, APP_A_INFO_END_ADDR},
+    {APP_B_INFO_START_ADDR, APP_B_INFO_END_ADDR}
+};
+
+/* Logical num */
+const uint32_t gs_blockNumAppInfo = sizeof(gs_astBlockNumAppInfo) / sizeof(gs_astBlockNumAppInfo[0u]);
+
 #ifdef EN_SUPPORT_APP_B
 /* Application can used space */
 const BlockInfo_t gs_astBlockNumB[] =
@@ -30,6 +48,17 @@ const BlockInfo_t gs_astBlockNumB[] =
 
 /* Logical num */
 const uint32_t gs_blockNumB = sizeof(gs_astBlockNumB) / sizeof(gs_astBlockNumB[0u]);
+#endif
+
+/* Multi-core config */
+#if (CORE_NO >= 1u)
+static const CoreInfo_t gs_astMultiCoreAPPRemapInfo[CORE_NO] =
+{
+    {
+        /* imageAStartAddr, imageBStartAddr, imageAMirrorAddr, imageBMirrorAddr, remapApplicationAddr */
+        0x1000000u, 0x1200000u, 0xA000000u, 0xA200000u, 0x2000000u
+    },
+};
 #endif
 
 static boolean HAL_FLASH_GetFlashConfigInfo_Inline(const tAPPType i_appType,
@@ -174,6 +203,32 @@ boolean HAL_FLASH_GetAPPInfo(const tAPPType i_appType, uint32 *o_pAppInfoStartAd
     return result;
 }
 
+boolean HAL_FLASH_GetAPPInfo_Info(const tAPPType i_appType, uint32 *o_pAppInfoStartAddr, uint32 *o_pBlockSize)
+{
+    boolean result = FALSE;
+
+    if (APP_A_TYPE == i_appType)
+    {
+        *o_pAppInfoStartAddr = gs_astBlockNumAppInfo[0u].xBlockStartLogicalAddr;
+        *o_pBlockSize = gs_astBlockNumAppInfo[0u].xBlockEndLogicalAddr - gs_astBlockNumA[0u].xBlockStartLogicalAddr;
+        result = TRUE;
+    }
+    else
+    {
+#ifdef EN_SUPPORT_APP_B
+
+        if (APP_B_TYPE == i_appType)
+        {
+            *o_pAppInfoStartAddr = gs_astBlockNumAppInfo[1u].xBlockStartLogicalAddr;
+            *o_pBlockSize = gs_astBlockNumAppInfo[1u].xBlockEndLogicalAddr - gs_astBlockNumAppInfo[1u].xBlockStartLogicalAddr;
+            result = TRUE;
+        }
+#endif
+    }
+
+    return result;
+}
+
 /* Get flash length to sectors */
 uint32 HAL_FLASH_GetFlashLengthToSectors(const uint32 i_startFlashAddr, const uint32 i_len)
 {
@@ -286,6 +341,12 @@ boolean HAL_FLASH_GetFlashDriverInfo(uint32_t *o_pFlashDriverAddrStart, uint32_t
     *o_pFlashDriverAddrStart = gs_astFlashDriverBlock[0u].xBlockStartLogicalAddr;
     *o_pFlashDriverEndAddr = gs_astFlashDriverBlock[0u].xBlockEndLogicalAddr;
     return TRUE;
+}
+
+/* Get config core no */
+uint32 HAL_FLASH_GetConfigCoreNo(void)
+{
+    return CORE_NO;
 }
 
 static boolean HAL_FLASH_GetFlashConfigInfo_Inline(const tAPPType i_appType,

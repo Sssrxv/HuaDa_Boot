@@ -105,6 +105,16 @@ typedef unsigned int uaddr_t;
 #define TX_BUS_FIFO_LEN     (100u)       /* RX BUS FIFO length */
 
 
+/* -------------------- Core Define -------------------- */
+/* This macro must >= 1 */
+#define CORE_NO (1u)
+#if (defined CORE_NO) && (CORE_NO < 1)
+#undef CORE_NO
+#define CORE_NO (1u)
+#elif (!defined CORE_NO)
+#define CORE_NO (1u)
+#endif
+
 /* -------------------------------------------- END OF FILE -------------------------------------------- */
 
 

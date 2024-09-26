@@ -3,6 +3,8 @@
 #include "app_uds_alg.h"
 #include "app_flash.h"
 #include "hal_tp.h"
+#include "hal_wdt.h"
+#include "app_boot_cfg.h"
 
 #define DOWLOAD_DATA_ADDR_LEN (4u) /* Download data addr len */
 #define DOWLOAD_DATA_LEN (4u)      /* Download data len */
@@ -121,6 +123,8 @@ static void DoCheckSum(uint8 TxStatus);
 static void DoResponseChecksum(uint8 i_Status);
 static void DoEraseFlashResponse(uint8 i_Status);
 static void RequestMoreTime(const uint8 UDSServiceID, void (*pcallback)(uint8));
+static void DoResetMCU(uint8 Txstatus);
+
 static uint8 DoCheckProgrammingDependency(void);
 static uint8_t IsWriteFingerprintRight(const tUdsAppMsgInfo *m_pstPDUMsg);
 static uint8_t IsDownloadDataAddrValid(const uint32_t i_DataAddr);
@@ -143,7 +147,7 @@ static void RequestTransferExit(struct UDSServiceInfo *i_pstUDSServiceInfo, tUds
 static void TransferData(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgInfo *m_pstPDUMsg);
 static void RoutineControl(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgInfo *m_pstPDUMsg);
 static void RequestTransferExit(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgInfo *m_pstPDUMsg);
-
+static void ResetECU(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgInfo *m_pstPDUMsg);
 
 static const tUDSService gs_astUDSService[] =
 {
@@ -228,14 +232,14 @@ static const tUDSService gs_astUDSService[] =
         RoutineControl
     },
 
-    // /* Reset ECU */
-    // {
-    //     0x11u,
-    //     PROGRAM_SESSION,
-    //     SUPPORT_PHYSICAL_ADDR | SUPPORT_FUNCTION_ADDR,
-    //     SECURITY_LEVEL_1,
-    //     ResetECU
-    // },
+    /* Reset ECU */
+    {
+        0x11u,
+        PROGRAM_SESSION,
+        SUPPORT_PHYSICAL_ADDR | SUPPORT_FUNCTION_ADDR,
+        SECURITY_LEVEL_1,
+        ResetECU
+    },
 
     // /* Tester present service */
     // {
@@ -506,10 +510,9 @@ static void RequestDownload(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppM
         Flash_SaveDownloadDataInfo(gs_stDowloadDataInfo.StartAddr, gs_stDowloadDataInfo.DataLen);
         /* Fill positive message */
         m_pstPDUMsg->aDataBuf[0u] = i_pstUDSServiceInfo->SerNum + 0x40u;
-        m_pstPDUMsg->aDataBuf[1u] = 0x20u;
-        m_pstPDUMsg->aDataBuf[2u] = 0x40u;          /* 一个segment大小扩大1024字节 */
-        m_pstPDUMsg->aDataBuf[3u] = 0x00u;
-        m_pstPDUMsg->xDataLen = 4u;
+        m_pstPDUMsg->aDataBuf[1u] = 0x10u;
+        m_pstPDUMsg->aDataBuf[2u] = 0x82u;          /* 一个segment大小为130 字节*/
+        m_pstPDUMsg->xDataLen = 3u;
         /* Set wait received block number */
         gs_RxBlockNum = 1u;
     }
@@ -567,9 +570,9 @@ static void TransferData(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgI
 
     if (TRUE == Ret)
     {
-        /* Transmitted positive message. */
+        /* Transmitted positive message. #36服务的肯定响应一般都只有两个字节参考14229-2  */
         m_pstPDUMsg->aDataBuf[0u] = i_pstUDSServiceInfo->SerNum + 0x40u;
-        m_pstPDUMsg->xDataLen = 4u;
+        m_pstPDUMsg->xDataLen = 2u;
     }
     else
     {
@@ -604,7 +607,7 @@ static void RequestTransferExit(struct UDSServiceInfo *i_pstUDSServiceInfo, tUds
     }
 }
 
-/* Routine control $31服务例程控制主要是擦除程序，完整性校验，兼容性校验 */
+/* Routine control #31服务例程控制主要是擦除程序，完整性校验，兼容性校验 */
 static void RoutineControl(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgInfo *m_pstPDUMsg)
 {
     uint8 Ret = FALSE;
@@ -672,6 +675,18 @@ uint8_t IsS3ServerTimeout(void)
     }
 
     return TimeoutStatus;
+}
+
+/* Reset ECU  #11服务 重启mcu */
+static void ResetECU(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgInfo *m_pstPDUMsg)
+{
+    /* If program data in flash successful, set Bootloader will jump to application flag */
+    Flash_EraseFlashDriverInRAM();
+    /* If invalid application software in flash, then this step set application jump to bootloader flag */
+    SetDownloadAppSuccessful();
+    m_pstPDUMsg->pfUDSTxMsgServiceCallBack = &DoResetMCU;
+    /* Request client timeout time */
+    SetNegativeErroCode(i_pstUDSServiceInfo->SerNum, NRC_SERVICE_BUSY, m_pstPDUMsg);
 }
 
 /***********************UDS Information Global function************************/
@@ -835,9 +850,38 @@ void UDS_SystemTickCtl(void)
         }
         else
         {
-            //DoResetMCU(TX_MSG_SUCCESSFUL);
+            DoResetMCU(TX_MSG_SUCCESSFUL);
         }
     }
+}
+
+/* Transmitted confirm message callback */
+static void TXConfrimMsgCallback(uint8 i_status)
+{
+    if (TX_MSG_SUCCESSFUL == i_status)
+    {
+        SetCurrentSession(PROGRAM_SESSION);
+        SetSecurityLevel(NONE_SECURITY);
+        /* Restart S3Server time */
+        RestartS3Server();
+    }
+}
+
+/* Write message to host based on UDS for request enter bootloader mode */
+boolean UDS_TxMsgToHost(void)
+{
+    tUdsAppMsgInfo stUdsAppMsg = {0u, 0u, {0u}, NULL_PTR};
+    boolean ret = FALSE;
+    stUdsAppMsg.xUdsId = TP_GetConfigTxMsgID();
+    stUdsAppMsg.xDataLen = 2;
+
+    stUdsAppMsg.aDataBuf[0u] = 0x50u;
+    stUdsAppMsg.aDataBuf[1u] = 0x02u;
+    stUdsAppMsg.pfUDSTxMsgServiceCallBack = TXConfrimMsgCallback;
+
+    ret = TP_WriteAFrameDataInTP(stUdsAppMsg.xUdsId, stUdsAppMsg.pfUDSTxMsgServiceCallBack,
+                                 stUdsAppMsg.xDataLen, stUdsAppMsg.aDataBuf);
+    return ret;
 }
 
 /* Check random is right? */
@@ -863,6 +907,20 @@ static uint8_t IsReceivedKeyRight(const uint8_t *i_pReceivedKey,
     }
 
     return TRUE;
+}
+
+static void DoResetMCU(uint8 Txstatus)
+{
+    if (TX_MSG_SUCCESSFUL == Txstatus)
+    {
+        /* Reset ECU */
+        HAL_SW_RESTT();
+
+        while (1)
+        {
+            /* Wait watch dog reset MCU */
+        }
+    }
 }
 
 /* Is write finger print right? */

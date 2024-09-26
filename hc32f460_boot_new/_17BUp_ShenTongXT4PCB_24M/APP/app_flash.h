@@ -61,5 +61,7 @@ void Flash_SaveFingerPrint(const uint8_t *i_pFingerPrint, const uint8_t i_Finger
 uint8_t Flash_ProgramRegion(const uint32_t i_addr,
                           const uint8_t *i_pDataBuf,
                           const uint32_t i_dataLen);
+                          
+uint32 Flash_GetResetHandlerAddr(void);
 
 #endif /* FLS_APP_H_ */

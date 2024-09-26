@@ -32,6 +32,7 @@
 .\output\debug\main.o: ..\Drivers\inc\hc32_ll_tmra.h
 .\output\debug\main.o: ..\Drivers\inc\hc32_ll_usart.h
 .\output\debug\main.o: ..\Drivers\inc\hc32_ll_utility.h
+.\output\debug\main.o: ..\Drivers\inc\hc32_ll_wdt.h
 .\output\debug\main.o: ..\BSP\ev_hc32f460_lqfp100_v2_bsp.h
 .\output\debug\main.o: ..\BSP\ev_hc32f460_lqfp100_v2.h
 .\output\debug\main.o: ..\Drivers\inc\hc32_ll_aos.h
@@ -55,4 +56,7 @@
 .\output\debug\main.o: ..\BSP\time.h
 .\output\debug\main.o: ../source/common.h
 .\output\debug\main.o: ..\APP\app_bootloader.h
+.\output\debug\main.o: ../source/common.h
+.\output\debug\main.o: ..\Hal\hal_wdt.h
+.\output\debug\main.o: ..\BSP\wdt.h
 .\output\debug\main.o: ../source/common.h

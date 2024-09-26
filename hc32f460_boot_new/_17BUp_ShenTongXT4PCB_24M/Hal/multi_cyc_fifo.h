@@ -35,7 +35,7 @@ typedef unsigned short tLen;
 
 #define FIFO_NUM (4u)           /* FIFO num */
 
-#define TOTAL_FIFO_BYTES (800u) /* Config total bytes */
+#define TOTAL_FIFO_BYTES (4096u) /* Config total bytes tip:800---->4096*/
 
 /**********************************************************
 **  Function Name       :   ApplyFifo

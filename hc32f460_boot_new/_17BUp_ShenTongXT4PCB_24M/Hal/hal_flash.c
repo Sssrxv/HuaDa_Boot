@@ -43,9 +43,11 @@ static boolean HAL_FLASH_EraseSector(const uint32 i_startAddr, const uint32 i_no
     uint8 ret = 0u;
     uint32 length = 0u;
     length = i_noEraseSectors * HAL_FLASH_Get1SectorBytes();
+
     ret = BSP_EraseFlashSector(i_startAddr, i_noEraseSectors);       //此函数只能擦除一个扇区i_noEraseSectors无用
 
-    if (0u == ret)
+    /* tip：目前擦除 == 1是ok之后需要修改flash driver */
+    if (1u == ret)
     {
         retstates = TRUE;
     }
@@ -62,6 +64,7 @@ static boolean HAL_FLASH_EraseSector(const uint32 i_startAddr, const uint32 i_no
                    i_dataLen write data len
  * Implements : FLASH_HAL_Init_Activity
  *END**************************************************************************/
+/* tip:由于flash 驱动返回值的问题修改判断条件   */
 static boolean HAL_FLASH_WriteData(const uint32 i_startAddr,
                                    const uint8 *i_pDataBuf,
                                    const uint32 i_dataLen)
@@ -80,7 +83,7 @@ static boolean HAL_FLASH_WriteData(const uint32 i_startAddr,
         {
             writeDataLen = i_dataLen - (i_dataLen  & (lessWriteLen - 1));
 
-            if (0u == BSP_WriteFlash(i_startAddr, i_pDataBuf, writeDataLen))
+            if (1u == BSP_WriteFlash(i_startAddr, i_pDataBuf, writeDataLen))
             {
                 retstates = TRUE;
             }
@@ -96,7 +99,7 @@ static boolean HAL_FLASH_WriteData(const uint32 i_startAddr,
                     aDataBuf[index] = i_pDataBuf[writeDataLen + index];
                 }
 
-                if (0u == BSP_WriteFlash(i_startAddr + writeDataLen, aDataBuf, 8u))
+                if (1u == BSP_WriteFlash(i_startAddr + writeDataLen, aDataBuf, 8u))
                 {
                     retstates = TRUE;
                 }
@@ -109,7 +112,7 @@ static boolean HAL_FLASH_WriteData(const uint32 i_startAddr,
                 aDataBuf[index] = i_pDataBuf[writeDataLen + index];
             }
 
-            if (0u == BSP_WriteFlash(i_startAddr + writeDataLen, aDataBuf, 8u))
+            if (1u == BSP_WriteFlash(i_startAddr + writeDataLen, aDataBuf, 8u))
             {
                 retstates = TRUE;
             }
@@ -117,7 +120,7 @@ static boolean HAL_FLASH_WriteData(const uint32 i_startAddr,
     }
     else
     {
-        if (0u == BSP_WriteFlash(i_startAddr, i_pDataBuf, i_dataLen))
+        if (1u == BSP_WriteFlash(i_startAddr, i_pDataBuf, i_dataLen))
         {
             retstates = TRUE;
         }

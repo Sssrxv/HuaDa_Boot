@@ -90,7 +90,7 @@ extern "C"
 #define LL_TRNG_ENABLE                              (DDL_OFF)
 #define LL_USART_ENABLE                             (DDL_ON)
 #define LL_USB_ENABLE                               (DDL_OFF)
-#define LL_WDT_ENABLE                               (DDL_OFF)
+#define LL_WDT_ENABLE                               (DDL_ON)
 
 /**
  * @brief The following is a list of currently supported BSP boards.
