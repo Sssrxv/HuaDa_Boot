@@ -14,7 +14,7 @@ I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
 I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
 I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
 I (../source/hc32f4xx_conf.h)(0x66EA38B7)
-F (..\source\main.c)(0x66F52A54)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\main.o --omf_browse .\output\debug\main.crf --depend .\output\debug\main.d)
+F (..\source\main.c)(0x670799D5)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\main.o --omf_browse .\output\debug\main.crf --depend .\output\debug\main.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (..\source\main.h)(0x66C7FFEC)
 I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
@@ -824,7 +824,7 @@ I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
 I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
 F (..\BSP\flash.c)(0x66D55E0D)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\flash.o --omf_browse .\output\debug\flash.crf --depend .\output\debug\flash.d)
 I (..\BSP\flash.h)(0x66D54851)
-I (..\Hal\hal_flash_cfg.h)(0x66F3797F)
+I (..\Hal\hal_flash_cfg.h)(0x67077A5D)
 I (../source/common.h)(0x66EA6E70)
 I (..\APP\app_flash.h)(0x66EA8CDB)
 I (..\Hal\hal_crc.h)(0x66CDA336)
@@ -1018,16 +1018,16 @@ I (..\BSP\ev_hc32f460_lqfp100_v2_bsp.h)(0x65151E3A)
 I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
 I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
 I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
-F (..\Hal\hal_crc.c)(0x66D55EA7)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hal_crc.o --omf_browse .\output\debug\hal_crc.crf --depend .\output\debug\hal_crc.d)
+F (..\Hal\hal_crc.c)(0x67090257)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hal_crc.o --omf_browse .\output\debug\hal_crc.crf --depend .\output\debug\hal_crc.d)
 I (..\Hal\hal_crc.h)(0x66CDA336)
 I (../source/common.h)(0x66EA6E70)
 F (..\Hal\hal_flash.c)(0x66E3F215)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hal_flash.o --omf_browse .\output\debug\hal_flash.crf --depend .\output\debug\hal_flash.d)
 I (..\Hal\hal_flash.h)(0x66D12AF3)
 I (../source/common.h)(0x66EA6E70)
-I (..\Hal\hal_flash_Cfg.h)(0x66F3797F)
+I (..\Hal\hal_flash_Cfg.h)(0x67077A5D)
 I (..\BSP\flash.h)(0x66D54851)
-F (..\Hal\hal_flash_cfg.c)(0x66F12FB3)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hal_flash_cfg.o --omf_browse .\output\debug\hal_flash_cfg.crf --depend .\output\debug\hal_flash_cfg.d)
-I (..\Hal\hal_flash_cfg.h)(0x66F3797F)
+F (..\Hal\hal_flash_cfg.c)(0x670649D2)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hal_flash_cfg.o --omf_browse .\output\debug\hal_flash_cfg.crf --depend .\output\debug\hal_flash_cfg.d)
+I (..\Hal\hal_flash_cfg.h)(0x67077A5D)
 I (../source/common.h)(0x66EA6E70)
 F (..\Hal\hal_wdt.c)(0x66EB814E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hal_wdt.o --omf_browse .\output\debug\hal_wdt.crf --depend .\output\debug\hal_wdt.d)
 I (..\BSP\wdt.h)(0x66EA6967)
@@ -1073,7 +1073,7 @@ I (../source/common.h)(0x66EA6E70)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
-F (..\APP\app_bootloader.c)(0x66F53206)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\app_bootloader.o --omf_browse .\output\debug\app_bootloader.crf --depend .\output\debug\app_bootloader.d)
+F (..\APP\app_bootloader.c)(0x670782C5)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\app_bootloader.o --omf_browse .\output\debug\app_bootloader.crf --depend .\output\debug\app_bootloader.d)
 I (..\APP\app_bootloader.h)(0x66EA4AD3)
 I (../source/common.h)(0x66EA6E70)
 I (..\Hal\hal_wdt.h)(0x66EBCACD)
@@ -1127,16 +1127,16 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (..\APP\app_uds.h)(0x66CD2F67)
 I (..\APP\app_uds_cfg.h)(0x66EA8E49)
 I (..\APP\app_flash.h)(0x66EA8CDB)
-I (..\Hal\hal_flash_cfg.h)(0x66F3797F)
+I (..\Hal\hal_flash_cfg.h)(0x67077A5D)
 I (..\APP\APP_boot.h)(0x66EA9059)
 I (..\BSP\time.h)(0x66CEE062)
 I (..\APP\app_boot_cfg.h)(0x66EA8CED)
 I (../source/main.h)(0x66C7FFEC)
-F (..\APP\app_flash.c)(0x66F52BEC)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\app_flash.o --omf_browse .\output\debug\app_flash.crf --depend .\output\debug\app_flash.d)
+F (..\APP\app_flash.c)(0x6705016B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\app_flash.o --omf_browse .\output\debug\app_flash.crf --depend .\output\debug\app_flash.d)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (..\APP\app_flash.h)(0x66EA8CDB)
 I (../source/common.h)(0x66EA6E70)
-I (..\Hal\hal_flash_cfg.h)(0x66F3797F)
+I (..\Hal\hal_flash_cfg.h)(0x67077A5D)
 I (..\Hal\hal_crc.h)(0x66CDA336)
 I (..\APP\app_uds_cfg.h)(0x66EA8E49)
 I (..\Hal\hal_uart_tp_cfg.h)(0x66E15F9B)
@@ -1232,7 +1232,7 @@ I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
 I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
 I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
 I (..\APP\app_flash.h)(0x66EA8CDB)
-I (..\Hal\hal_flash_cfg.h)(0x66F3797F)
+I (..\Hal\hal_flash_cfg.h)(0x67077A5D)
 F (..\APP\app_uds_alg.c)(0x66CD9C5B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\app_uds_alg.o --omf_browse .\output\debug\app_uds_alg.crf --depend .\output\debug\app_uds_alg.d)
 I (..\APP\app_uds_alg.h)(0x66CD9C59)
 I (../source/common.h)(0x66EA6E70)
@@ -1269,7 +1269,7 @@ I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
 I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
 I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
 I (..\APP\AES.h)(0x66CD9BA7)
-F (..\APP\app_uds_cfg.c)(0x66EB92B6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\app_uds_cfg.o --omf_browse .\output\debug\app_uds_cfg.crf --depend .\output\debug\app_uds_cfg.d)
+F (..\APP\app_uds_cfg.c)(0x6709E633)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\app_uds_cfg.o --omf_browse .\output\debug\app_uds_cfg.crf --depend .\output\debug\app_uds_cfg.d)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
 I (..\APP\app_uds_cfg.h)(0x66EA8E49)
 I (../source/common.h)(0x66EA6E70)
@@ -1278,7 +1278,7 @@ I (..\Hal\multi_cyc_fifo.h)(0x66E16804)
 I (..\Hal\hal_tp_cfg.h)(0x66E15F94)
 I (..\APP\app_uds_alg.h)(0x66CD9C59)
 I (..\APP\app_flash.h)(0x66EA8CDB)
-I (..\Hal\hal_flash_cfg.h)(0x66F3797F)
+I (..\Hal\hal_flash_cfg.h)(0x67077A5D)
 I (..\Hal\hal_tp.h)(0x66CD849F)
 I (..\Hal\hal_uart_tp.h)(0x66C6F790)
 I (..\Hal\hal_uart.h)(0x66D57C76)
@@ -1377,9 +1377,9 @@ I (..\Hal\hal_uart_tp_cfg.h)(0x66E15F9B)
 I (..\Hal\multi_cyc_fifo.h)(0x66E16804)
 I (..\BSP\time.h)(0x66CEE062)
 I (..\APP\app_flash.h)(0x66EA8CDB)
-I (..\Hal\hal_flash_cfg.h)(0x66F3797F)
+I (..\Hal\hal_flash_cfg.h)(0x67077A5D)
 I (..\APP\app_uds_cfg.h)(0x66EA8E49)
-F (..\APP\app_boot_cfg.c)(0x66EA92BE)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\app_boot_cfg.o --omf_browse .\output\debug\app_boot_cfg.crf --depend .\output\debug\app_boot_cfg.d)
+F (..\APP\app_boot_cfg.c)(0x67050C57)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\app_boot_cfg.o --omf_browse .\output\debug\app_boot_cfg.crf --depend .\output\debug\app_boot_cfg.d)
 I (..\APP\APP_boot_cfg.h)(0x66EA8CED)
 I (../source/common.h)(0x66EA6E70)
 I (../source/main.h)(0x66C7FFEC)
@@ -1429,5 +1429,5 @@ I (..\Hal\hal_uart_tp.h)(0x66C6F790)
 I (..\Hal\hal_uart_tp_cfg.h)(0x66E15F9B)
 I (..\Hal\multi_cyc_fifo.h)(0x66E16804)
 I (..\BSP\time.h)(0x66CEE062)
-I (..\Hal\hal_flash_cfg.h)(0x66F3797F)
+I (..\Hal\hal_flash_cfg.h)(0x67077A5D)
 I (..\Hal\hal_crc.h)(0x66CDA336)

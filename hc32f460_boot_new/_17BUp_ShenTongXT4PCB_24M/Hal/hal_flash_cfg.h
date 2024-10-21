@@ -8,9 +8,9 @@
 #define MAX_ERASE_SECTOR_FLASH_MS (25)          //20+6*T(hclk)
 
 /* 这些信息存储在SRAM1里面 */
-#define INFO_START_ADDR                 0x20006FF0u
-#define REQUEST_ENTER_BOOTLOADER_ADDR   0x20006FF1u
-#define DOWNLOAD_APP_SUCCESSFUL_ADDR    0x20006FF0u
+#define INFO_START_ADDR                 0x200F0FF0u
+#define REQUEST_ENTER_BOOTLOADER_ADDR   0x200F0FF1u
+#define DOWNLOAD_APP_SUCCESSFUL_ADDR    0x200F0FF0u
 
 /* 这些信息存储在SRAMH里面 禁止使用0x1FFF8000-0x1FFF8008这块内存空间已经存了内存相关函数 */
 #define FLASH_DRV_START_ADDR            0x2001F000u

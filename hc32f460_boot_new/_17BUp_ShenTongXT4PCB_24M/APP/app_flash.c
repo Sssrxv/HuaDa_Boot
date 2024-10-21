@@ -390,7 +390,7 @@ uint8 Flash_WriteFlashAppInfo(void)
             /* 从Flash中获取应用程序的起始地址（旧应用，因为新应用信息还未写入） 由于分区方案需要重定位 */
             resetHandleAddr = appInfoStartAddr + resetHandlerOffset;
             // 保存复位处理程序地址和长度
-            SaveAppResetHandlerAddr(*((uint32 *)resetHandleAddr), resetHandlerLength);
+            SaveAppResetHandlerAddr((resetHandleAddr-4), resetHandlerLength);
 
             crc = 0u; // 重新初始化CRC值
             // 创建并保存新的应用状态的CRC值

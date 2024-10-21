@@ -210,7 +210,7 @@ boolean HAL_FLASH_GetAPPInfo_Info(const tAPPType i_appType, uint32 *o_pAppInfoSt
     if (APP_A_TYPE == i_appType)
     {
         *o_pAppInfoStartAddr = gs_astBlockNumAppInfo[0u].xBlockStartLogicalAddr;
-        *o_pBlockSize = gs_astBlockNumAppInfo[0u].xBlockEndLogicalAddr - gs_astBlockNumA[0u].xBlockStartLogicalAddr;
+        *o_pBlockSize = gs_astBlockNumAppInfo[0u].xBlockEndLogicalAddr - gs_astBlockNumAppInfo[0u].xBlockStartLogicalAddr;
         result = TRUE;
     }
     else

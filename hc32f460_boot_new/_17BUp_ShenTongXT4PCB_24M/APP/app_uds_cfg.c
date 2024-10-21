@@ -142,6 +142,7 @@ static void CommunicationControl(struct UDSServiceInfo *i_pstUDSServiceInfo, tUd
 static void ControlDTCSetting(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgInfo *m_pstPDUMsg);
 static void SecurityAccess(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgInfo *m_pstPDUMsg);
 static void WriteDataByIdentifier(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgInfo *m_pstPDUMsg);
+static void ReadDataByIdentifier(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgInfo *m_pstPDUMsg);
 static void RequestDownload(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgInfo *m_pstPDUMsg);
 static void RequestTransferExit(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgInfo *m_pstPDUMsg);
 static void TransferData(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgInfo *m_pstPDUMsg);
@@ -241,6 +242,16 @@ static const tUDSService gs_astUDSService[] =
         ResetECU
     },
 
+    {
+        0x22u,
+        DEFALUT_SESSION | PROGRAM_SESSION | EXTEND_SESSION,
+        SUPPORT_PHYSICAL_ADDR | SUPPORT_FUNCTION_ADDR,
+        NONE_SECURITY,
+        ReadDataByIdentifier
+    },
+
+
+    /* */
     // /* Tester present service */
     // {
     //     0x3Eu,
@@ -689,6 +700,31 @@ static void ResetECU(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgInfo 
     SetNegativeErroCode(i_pstUDSServiceInfo->SerNum, NRC_SERVICE_BUSY, m_pstPDUMsg);
 }
 
+/* Read data by identifier  #22服务读数据 */
+static void ReadDataByIdentifier(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgInfo *m_pstPDUMsg)
+{
+    uint8_t RequestSubfunction = 0u;
+    tAPPType newestAPP;
+    RequestSubfunction = m_pstPDUMsg->aDataBuf[1u];
+    m_pstPDUMsg->aDataBuf[0u] = i_pstUDSServiceInfo->SerNum + 0x40u;
+    m_pstPDUMsg->aDataBuf[1] = RequestSubfunction;
+    m_pstPDUMsg->xDataLen = 3;
+    /* Sub function */
+    switch (RequestSubfunction)
+    {
+        case 0x01:
+            /* 读取版本号 */
+            newestAPP =  Flash_GetNewestAPPType();
+            m_pstPDUMsg->aDataBuf[2] = newestAPP;
+            break;
+
+        case 0x02:
+            /* 读取分区的刷写次数 */
+        default:
+            SetNegativeErroCode(i_pstUDSServiceInfo->SerNum, NRC_SUBFUNCTION_NOT_SUPPORTED, m_pstPDUMsg);
+            break;
+    }
+}
 /***********************UDS Information Global function************************/
 /* Set current request ID SUPPORT_PHYSICAL_ADDR/SUPPORT_FUNCTION_ADDR */
 #define SetRequestIdType(xRequestIDType) (gs_stUdsInfo.RequsetIdMode = (xRequestIDType))

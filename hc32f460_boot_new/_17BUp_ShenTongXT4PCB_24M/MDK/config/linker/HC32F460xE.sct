@@ -27,8 +27,8 @@ LR_IROM1 0x00000000 0x00010000  {    ; load region size_region
     RW_IRAM3 0x2001F000 empty 0x00000800  {  ; flash driver
     }
 
-    RW_IRAMB 0x200F0000 0x00001000  {  ; RW data
-        .ANY (+RW +ZI)
+    RW_IRAMB 0x200F0000 empty 0x00001000  {  ; RW data
+    ;    .ANY (+RW +ZI)
     }
 }
 

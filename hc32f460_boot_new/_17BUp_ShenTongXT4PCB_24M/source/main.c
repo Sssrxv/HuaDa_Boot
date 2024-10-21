@@ -7,36 +7,36 @@
 #define EXAMPLE_PERIPH_WE								LL_PERIPH_ALL
 #define EXAMPLE_PERIPH_WP								LL_PERIPH_ALL
 
-// #define SCB_VTOR_TBLOFF_Pos                 7U                                            /*!< SCB VTOR: TBLOFF Position */
-// #define SCB_VTOR_TBLOFF_Msk                (0x1FFFFFFUL << SCB_VTOR_TBLOFF_Pos)
+#define SCB_VTOR_TBLOFF_Pos                 7U                                            /*!< SCB VTOR: TBLOFF Position */
+#define SCB_VTOR_TBLOFF_Msk                (0x1FFFFFFUL << SCB_VTOR_TBLOFF_Pos)
 
-// #define APP_ADDRESS   0x00042000
+#define APP_ADDRESS_tsest   0x00042000
 
-// #define RAM_SIZE                    0x2F000ul
-// typedef void (*func_ptr_t)(void);
-// uint32_t JumpAddress;
-// func_ptr_t JumpToApplication;
+#define RAM_SIZE                    0x2F000ul
+typedef void (*func_ptr_t)(void);
+uint32_t JumpAddress_tsest;
+func_ptr_t JumpToApplication_tsest;
 
-// static void IAP_JumpToApp(uint32_t u32Addr)
-// {
-//     uint32_t u32StackTop = *((__IO uint32_t *)u32Addr);
+static void IAP_JumpToApp(uint32_t u32Addr)
+{
+    uint32_t u32StackTop = *((__IO uint32_t *)u32Addr);
 
-//     /* Check if user code is programmed starting from address "u32Addr" */
-//     /* Check stack top pointer. */
-//     if ((u32StackTop > SRAM_BASE) && (u32StackTop <= (SRAM_BASE + RAM_SIZE)))
-//     {
-//         // IAP_ResetConfig();
-//         /* Jump to user application */
-//         JumpAddress = *(__IO uint32_t *)(u32Addr + 4);
-//         JumpToApplication = (func_ptr_t)JumpAddress;
-//         /* Initialize user application's Stack Pointer */
-//         __set_MSP(*(__IO uint32_t *)u32Addr);
+    /* Check if user code is programmed starting from address "u32Addr" */
+    /* Check stack top pointer. */
+    if ((u32StackTop > SRAM_BASE) && (u32StackTop <= (SRAM_BASE + RAM_SIZE)))
+    {
+        // IAP_ResetConfig();
+        /* Jump to user application */
+        JumpAddress_tsest = *(__IO uint32_t *)(u32Addr + 4);
+        JumpToApplication_tsest = (func_ptr_t)JumpAddress_tsest;
+        /* Initialize user application's Stack Pointer */
+        __set_MSP(*(__IO uint32_t *)u32Addr);
         
-//         SCB->VTOR = ((uint32_t) u32Addr & SCB_VTOR_TBLOFF_Msk);
+        SCB->VTOR = ((uint32_t) u32Addr & SCB_VTOR_TBLOFF_Msk);
         
-//         JumpToApplication();
-//     }
-// }
+        JumpToApplication_tsest();
+    }
+}
 
 static void BSP_Init(void)
 {
@@ -89,9 +89,15 @@ static void BSP_AbortCANTxMsg(void)
  */
 int32_t main(void)
 {
+	// IAP_JumpToApp(APP_ADDRESS_tsest);
+
+    // uint8_t arr[16] = {0x5A,0,0,0,0,0,0,0,0,0,0,0,0xdd,0xdd,0,0};
+    // uint32_t addr = 0x200F0FF0u;
+    // memcpy((void *)addr, (void *)arr, 16);
+
     UDS_MAIN_Init(BSP_Init, BSP_AbortCANTxMsg);
     
-	// IAP_JumpToApp(APP_ADDRESS);
+	// IAP_JumpToApp(APP_ADDRESS_tsest);
 	
     /* test */
 	while (1)
