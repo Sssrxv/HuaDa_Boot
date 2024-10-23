@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "ev_hc32f460_lqfp100_v2_bsp.h": "c",
+        "stdlib.h": "c",
+        "uart.h": "c",
+        "hal_uart_tp_cfg.h": "c",
+        "hal_uart.h": "c",
+        "app_uds_alg.h": "c",
+        "common.h": "c",
+        "hal_flash_cfg.h": "c",
+        "app_flash.h": "c",
+        "app_bootloader.h": "c",
+        "hal_crc.h": "c",
+        "hc32_ll_tmr0.h": "c",
+        "hal_wdt.h": "c",
+        "time.h": "c",
+        "app_boot.h": "c",
+        "app_boot_cfg.h": "c",
+        "wdt.h": "c",
+        "functional": "c"
+    }
+}

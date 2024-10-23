@@ -1,0 +1,1433 @@
+Dependencies for Project 'usart_uart_polling', Target 'usart_uart_polling_Debug': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Source\ARM\startup_hc32f460.s)(0x66D5851C)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include--pd "__UVISION_VERSION SETA 534"--list .\output\debug\startup_hc32f460.lst --xref -o .\output\debug\startup_hc32f460.o --depend .\output\debug\startup_hc32f460.d)
+F (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Source\system_hc32f460.c)(0x66BEC6E6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\system_hc32f460.o --omf_browse .\output\debug\system_hc32f460.crf --depend .\output\debug\system_hc32f460.d)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+F (..\source\main.c)(0x670799D5)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\main.o --omf_browse .\output\debug\main.crf --depend .\output\debug\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
+I (..\source\main.h)(0x66C7FFEC)
+I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+I (..\BSP\ev_hc32f460_lqfp100_v2_bsp.h)(0x65151E3A)
+I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
+I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
+I (..\BSP\uart.h)(0x66C54EDC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (../source/common.h)(0x66EA6E70)
+I (..\Hal\hal_uart.h)(0x66D57C76)
+I (..\Hal\hal_tp_cfg.h)(0x66E15F94)
+I (..\Hal\hal_tp.h)(0x66CD849F)
+I (..\Hal\hal_uart_tp.h)(0x66C6F790)
+I (..\Hal\hal_uart_tp_cfg.h)(0x66E15F9B)
+I (..\Hal\multi_cyc_fifo.h)(0x66E16804)
+I (..\BSP\time.h)(0x66CEE062)
+I (..\APP\app_bootloader.h)(0x66EA4AD3)
+I (..\Hal\hal_wdt.h)(0x66EBCACD)
+I (..\BSP\wdt.h)(0x66EA6967)
+F (..\Drivers\src\hc32_ll.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll.o --omf_browse .\output\debug\hc32_ll.crf --depend .\output\debug\hc32_ll.d)
+I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+F (..\Drivers\src\hc32_ll_adc.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_adc.o --omf_browse .\output\debug\hc32_ll_adc.crf --depend .\output\debug\hc32_ll_adc.d)
+I (..\Drivers\inc\hc32_ll_adc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_aes.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_aes.o --omf_browse .\output\debug\hc32_ll_aes.crf --depend .\output\debug\hc32_ll_aes.d)
+I (..\Drivers\inc\hc32_ll_aes.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_aos.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_aos.o --omf_browse .\output\debug\hc32_ll_aos.crf --depend .\output\debug\hc32_ll_aos.d)
+I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_can.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_can.o --omf_browse .\output\debug\hc32_ll_can.crf --depend .\output\debug\hc32_ll_can.d)
+I (..\Drivers\inc\hc32_ll_can.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_clk.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_clk.o --omf_browse .\output\debug\hc32_ll_clk.crf --depend .\output\debug\hc32_ll_clk.d)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_cmp.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_cmp.o --omf_browse .\output\debug\hc32_ll_cmp.crf --depend .\output\debug\hc32_ll_cmp.d)
+I (..\Drivers\inc\hc32_ll_cmp.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_crc.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_crc.o --omf_browse .\output\debug\hc32_ll_crc.crf --depend .\output\debug\hc32_ll_crc.d)
+I (..\Drivers\inc\hc32_ll_crc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_dbgc.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_dbgc.o --omf_browse .\output\debug\hc32_ll_dbgc.crf --depend .\output\debug\hc32_ll_dbgc.d)
+I (..\Drivers\inc\hc32_ll_dbgc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_dcu.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_dcu.o --omf_browse .\output\debug\hc32_ll_dcu.crf --depend .\output\debug\hc32_ll_dcu.d)
+I (..\Drivers\inc\hc32_ll_dcu.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_dma.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_dma.o --omf_browse .\output\debug\hc32_ll_dma.crf --depend .\output\debug\hc32_ll_dma.d)
+I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_efm.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_efm.o --omf_browse .\output\debug\hc32_ll_efm.crf --depend .\output\debug\hc32_ll_efm.d)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_emb.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_emb.o --omf_browse .\output\debug\hc32_ll_emb.crf --depend .\output\debug\hc32_ll_emb.d)
+I (..\Drivers\inc\hc32_ll_emb.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_event_port.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_event_port.o --omf_browse .\output\debug\hc32_ll_event_port.crf --depend .\output\debug\hc32_ll_event_port.d)
+I (..\Drivers\inc\hc32_ll_event_port.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_fcg.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_fcg.o --omf_browse .\output\debug\hc32_ll_fcg.crf --depend .\output\debug\hc32_ll_fcg.d)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_fcm.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_fcm.o --omf_browse .\output\debug\hc32_ll_fcm.crf --depend .\output\debug\hc32_ll_fcm.d)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_gpio.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_gpio.o --omf_browse .\output\debug\hc32_ll_gpio.crf --depend .\output\debug\hc32_ll_gpio.d)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_hash.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_hash.o --omf_browse .\output\debug\hc32_ll_hash.crf --depend .\output\debug\hc32_ll_hash.d)
+I (..\Drivers\inc\hc32_ll_hash.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_i2c.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_i2c.o --omf_browse .\output\debug\hc32_ll_i2c.crf --depend .\output\debug\hc32_ll_i2c.d)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_i2s.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_i2s.o --omf_browse .\output\debug\hc32_ll_i2s.crf --depend .\output\debug\hc32_ll_i2s.d)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_icg.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_icg.o --omf_browse .\output\debug\hc32_ll_icg.crf --depend .\output\debug\hc32_ll_icg.d)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+F (..\Drivers\src\hc32_ll_interrupts.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_interrupts.o --omf_browse .\output\debug\hc32_ll_interrupts.crf --depend .\output\debug\hc32_ll_interrupts.d)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_mpu.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_mpu.o --omf_browse .\output\debug\hc32_ll_mpu.crf --depend .\output\debug\hc32_ll_mpu.d)
+I (..\Drivers\inc\hc32_ll_mpu.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_ots.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_ots.o --omf_browse .\output\debug\hc32_ll_ots.crf --depend .\output\debug\hc32_ll_ots.d)
+I (..\Drivers\inc\hc32_ll_ots.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_pwc.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_pwc.o --omf_browse .\output\debug\hc32_ll_pwc.crf --depend .\output\debug\hc32_ll_pwc.d)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_qspi.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_qspi.o --omf_browse .\output\debug\hc32_ll_qspi.crf --depend .\output\debug\hc32_ll_qspi.d)
+I (..\Drivers\inc\hc32_ll_qspi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_rmu.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_rmu.o --omf_browse .\output\debug\hc32_ll_rmu.crf --depend .\output\debug\hc32_ll_rmu.d)
+I (..\Drivers\inc\hc32_ll_rmu.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_rtc.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_rtc.o --omf_browse .\output\debug\hc32_ll_rtc.crf --depend .\output\debug\hc32_ll_rtc.d)
+I (..\Drivers\inc\hc32_ll_rtc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_sdioc.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_sdioc.o --omf_browse .\output\debug\hc32_ll_sdioc.crf --depend .\output\debug\hc32_ll_sdioc.d)
+I (..\Drivers\inc\hc32_ll_sdioc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_spi.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_spi.o --omf_browse .\output\debug\hc32_ll_spi.crf --depend .\output\debug\hc32_ll_spi.d)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_sram.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_sram.o --omf_browse .\output\debug\hc32_ll_sram.crf --depend .\output\debug\hc32_ll_sram.d)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_swdt.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_swdt.o --omf_browse .\output\debug\hc32_ll_swdt.crf --depend .\output\debug\hc32_ll_swdt.d)
+I (..\Drivers\inc\hc32_ll_swdt.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_tmr0.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_tmr0.o --omf_browse .\output\debug\hc32_ll_tmr0.crf --depend .\output\debug\hc32_ll_tmr0.d)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_tmr4.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_tmr4.o --omf_browse .\output\debug\hc32_ll_tmr4.crf --depend .\output\debug\hc32_ll_tmr4.d)
+I (..\Drivers\inc\hc32_ll_tmr4.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_tmr6.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_tmr6.o --omf_browse .\output\debug\hc32_ll_tmr6.crf --depend .\output\debug\hc32_ll_tmr6.d)
+I (..\Drivers\inc\hc32_ll_tmr6.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_tmra.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_tmra.o --omf_browse .\output\debug\hc32_ll_tmra.crf --depend .\output\debug\hc32_ll_tmra.d)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_trng.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_trng.o --omf_browse .\output\debug\hc32_ll_trng.crf --depend .\output\debug\hc32_ll_trng.d)
+I (..\Drivers\inc\hc32_ll_trng.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_usart.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_usart.o --omf_browse .\output\debug\hc32_ll_usart.crf --depend .\output\debug\hc32_ll_usart.d)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_utility.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_utility.o --omf_browse .\output\debug\hc32_ll_utility.crf --depend .\output\debug\hc32_ll_utility.d)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+F (..\Drivers\src\hc32_ll_wdt.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_wdt.o --omf_browse .\output\debug\hc32_ll_wdt.crf --depend .\output\debug\hc32_ll_wdt.d)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32f460_ll_interrupts_share.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32f460_ll_interrupts_share.o --omf_browse .\output\debug\hc32f460_ll_interrupts_share.crf --depend .\output\debug\hc32f460_ll_interrupts_share.d)
+I (..\Drivers\inc\hc32f460_ll_interrupts_share.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\Drivers\src\hc32_ll_keyscan.c)(0x65151E3A)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hc32_ll_keyscan.o --omf_browse .\output\debug\hc32_ll_keyscan.crf --depend .\output\debug\hc32_ll_keyscan.d)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\BSP\ev_hc32f460_lqfp100_v2.c)(0x65BDBF72)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\ev_hc32f460_lqfp100_v2.o --omf_browse .\output\debug\ev_hc32f460_lqfp100_v2.crf --depend .\output\debug\ev_hc32f460_lqfp100_v2.d)
+I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
+I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+F (..\BSP\uart.c)(0x66D6C3EA)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\uart.o --omf_browse .\output\debug\uart.crf --depend .\output\debug\uart.d)
+I (..\BSP\uart.h)(0x66C54EDC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+I (..\BSP\ev_hc32f460_lqfp100_v2_bsp.h)(0x65151E3A)
+I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
+I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
+I (../source/common.h)(0x66EA6E70)
+I (C:\Keil_v5\ARM\ARMCC\include\cstdint)(0x5E8E3CC2)
+F (..\BSP\time.c)(0x66EAB81F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\time.o --omf_browse .\output\debug\time.crf --depend .\output\debug\time.d)
+I (..\BSP\time.h)(0x66CEE062)
+I (../source/common.h)(0x66EA6E70)
+I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+I (..\BSP\wdt.h)(0x66EA6967)
+I (..\BSP\ev_hc32f460_lqfp100_v2_bsp.h)(0x65151E3A)
+I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
+I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
+F (..\BSP\flash.c)(0x66D55E0D)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\flash.o --omf_browse .\output\debug\flash.crf --depend .\output\debug\flash.d)
+I (..\BSP\flash.h)(0x66D54851)
+I (..\Hal\hal_flash_cfg.h)(0x67077A5D)
+I (../source/common.h)(0x66EA6E70)
+I (..\APP\app_flash.h)(0x66EA8CDB)
+I (..\Hal\hal_crc.h)(0x66CDA336)
+F (..\BSP\wdt.c)(0x66F52A8F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\wdt.o --omf_browse .\output\debug\wdt.crf --depend .\output\debug\wdt.d)
+I (..\BSP\wdt.h)(0x66EA6967)
+I (../source/common.h)(0x66EA6E70)
+I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+I (..\BSP\ev_hc32f460_lqfp100_v2_bsp.h)(0x65151E3A)
+I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
+I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
+F (..\Hal\hal_tp_cfg.c)(0x66CEDB47)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hal_tp_cfg.o --omf_browse .\output\debug\hal_tp_cfg.crf --depend .\output\debug\hal_tp_cfg.d)
+I (..\Hal\hal_tp_cfg.h)(0x66E15F94)
+I (../source/common.h)(0x66EA6E70)
+I (..\Hal\hal_uart_tp_cfg.h)(0x66E15F9B)
+I (..\Hal\multi_cyc_fifo.h)(0x66E16804)
+F (..\Hal\hal_uart.c)(0x66DFFA60)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hal_uart.o --omf_browse .\output\debug\hal_uart.crf --depend .\output\debug\hal_uart.d)
+I (..\Hal\hal_uart.h)(0x66D57C76)
+I (..\BSP\uart.h)(0x66C54EDC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+I (..\BSP\ev_hc32f460_lqfp100_v2_bsp.h)(0x65151E3A)
+I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
+I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
+I (../source/common.h)(0x66EA6E70)
+I (..\Hal\hal_tp_cfg.h)(0x66E15F94)
+I (..\Hal\hal_uart_tp_cfg.h)(0x66E15F9B)
+I (..\Hal\multi_cyc_fifo.h)(0x66E16804)
+F (..\Hal\hal_uart_tp_cfg.c)(0x66DE59B5)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hal_uart_tp_cfg.o --omf_browse .\output\debug\hal_uart_tp_cfg.crf --depend .\output\debug\hal_uart_tp_cfg.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (..\Hal\hal_uart_tp_cfg.h)(0x66E15F9B)
+I (../source/common.h)(0x66EA6E70)
+I (..\Hal\multi_cyc_fifo.h)(0x66E16804)
+I (..\Hal\hal_tp_cfg.h)(0x66E15F94)
+I (..\Hal\hal_uart.h)(0x66D57C76)
+I (..\BSP\uart.h)(0x66C54EDC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+I (..\BSP\ev_hc32f460_lqfp100_v2_bsp.h)(0x65151E3A)
+I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
+I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
+F (..\Hal\multi_cyc_fifo.c)(0x66C32176)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\multi_cyc_fifo.o --omf_browse .\output\debug\multi_cyc_fifo.crf --depend .\output\debug\multi_cyc_fifo.d)
+I (..\Hal\multi_cyc_fifo.h)(0x66E16804)
+I (../source/common.h)(0x66EA6E70)
+F (..\Hal\hal_uart_tp.c)(0x66E40AC9)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hal_uart_tp.o --omf_browse .\output\debug\hal_uart_tp.crf --depend .\output\debug\hal_uart_tp.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (..\Hal\hal_uart_tp.h)(0x66C6F790)
+I (..\Hal\hal_uart_tp_cfg.h)(0x66E15F9B)
+I (../source/common.h)(0x66EA6E70)
+I (..\Hal\multi_cyc_fifo.h)(0x66E16804)
+I (..\Hal\hal_tp_cfg.h)(0x66E15F94)
+F (..\Hal\hal_tp.c)(0x66CD6B2C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hal_tp.o --omf_browse .\output\debug\hal_tp.crf --depend .\output\debug\hal_tp.d)
+I (..\Hal\hal_tp.h)(0x66CD849F)
+I (../source/common.h)(0x66EA6E70)
+I (..\Hal\hal_tp_cfg.h)(0x66E15F94)
+I (..\Hal\hal_uart_tp.h)(0x66C6F790)
+I (..\Hal\hal_uart_tp_cfg.h)(0x66E15F9B)
+I (..\Hal\multi_cyc_fifo.h)(0x66E16804)
+I (..\Hal\hal_uart.h)(0x66D57C76)
+I (..\BSP\uart.h)(0x66C54EDC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+I (..\BSP\ev_hc32f460_lqfp100_v2_bsp.h)(0x65151E3A)
+I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
+I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
+F (..\Hal\hal_crc.c)(0x67090257)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hal_crc.o --omf_browse .\output\debug\hal_crc.crf --depend .\output\debug\hal_crc.d)
+I (..\Hal\hal_crc.h)(0x66CDA336)
+I (../source/common.h)(0x66EA6E70)
+F (..\Hal\hal_flash.c)(0x66E3F215)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hal_flash.o --omf_browse .\output\debug\hal_flash.crf --depend .\output\debug\hal_flash.d)
+I (..\Hal\hal_flash.h)(0x66D12AF3)
+I (../source/common.h)(0x66EA6E70)
+I (..\Hal\hal_flash_Cfg.h)(0x67077A5D)
+I (..\BSP\flash.h)(0x66D54851)
+F (..\Hal\hal_flash_cfg.c)(0x670649D2)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hal_flash_cfg.o --omf_browse .\output\debug\hal_flash_cfg.crf --depend .\output\debug\hal_flash_cfg.d)
+I (..\Hal\hal_flash_cfg.h)(0x67077A5D)
+I (../source/common.h)(0x66EA6E70)
+F (..\Hal\hal_wdt.c)(0x66EB814E)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\hal_wdt.o --omf_browse .\output\debug\hal_wdt.crf --depend .\output\debug\hal_wdt.d)
+I (..\BSP\wdt.h)(0x66EA6967)
+I (../source/common.h)(0x66EA6E70)
+I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+I (..\BSP\ev_hc32f460_lqfp100_v2_bsp.h)(0x65151E3A)
+I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
+I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
+F (..\APP\AES.c)(0x66CD9BBB)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\aes.o --omf_browse .\output\debug\aes.crf --depend .\output\debug\aes.d)
+I (..\APP\AES.h)(0x66CD9BA7)
+I (../source/common.h)(0x66EA6E70)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+F (..\APP\app_bootloader.c)(0x670782C5)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\app_bootloader.o --omf_browse .\output\debug\app_bootloader.crf --depend .\output\debug\app_bootloader.d)
+I (..\APP\app_bootloader.h)(0x66EA4AD3)
+I (../source/common.h)(0x66EA6E70)
+I (..\Hal\hal_wdt.h)(0x66EBCACD)
+I (..\BSP\wdt.h)(0x66EA6967)
+I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+I (..\BSP\ev_hc32f460_lqfp100_v2_bsp.h)(0x65151E3A)
+I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
+I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
+I (..\Hal\hal_crc.h)(0x66CDA336)
+I (..\Hal\hal_tp.h)(0x66CD849F)
+I (..\Hal\hal_tp_cfg.h)(0x66E15F94)
+I (..\Hal\hal_uart_tp.h)(0x66C6F790)
+I (..\Hal\hal_uart_tp_cfg.h)(0x66E15F9B)
+I (..\Hal\multi_cyc_fifo.h)(0x66E16804)
+I (..\Hal\hal_uart.h)(0x66D57C76)
+I (..\BSP\uart.h)(0x66C54EDC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\APP\app_uds.h)(0x66CD2F67)
+I (..\APP\app_uds_cfg.h)(0x66EA8E49)
+I (..\APP\app_flash.h)(0x66EA8CDB)
+I (..\Hal\hal_flash_cfg.h)(0x67077A5D)
+I (..\APP\APP_boot.h)(0x66EA9059)
+I (..\BSP\time.h)(0x66CEE062)
+I (..\APP\app_boot_cfg.h)(0x66EA8CED)
+I (../source/main.h)(0x66C7FFEC)
+F (..\APP\app_flash.c)(0x6705016B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\app_flash.o --omf_browse .\output\debug\app_flash.crf --depend .\output\debug\app_flash.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (..\APP\app_flash.h)(0x66EA8CDB)
+I (../source/common.h)(0x66EA6E70)
+I (..\Hal\hal_flash_cfg.h)(0x67077A5D)
+I (..\Hal\hal_crc.h)(0x66CDA336)
+I (..\APP\app_uds_cfg.h)(0x66EA8E49)
+I (..\Hal\hal_uart_tp_cfg.h)(0x66E15F9B)
+I (..\Hal\multi_cyc_fifo.h)(0x66E16804)
+I (..\Hal\hal_tp_cfg.h)(0x66E15F94)
+I (..\Hal\hal_flash.h)(0x66D12AF3)
+I (..\BSP\flash.h)(0x66D54851)
+I (..\Hal\hal_wdt.h)(0x66EBCACD)
+I (..\BSP\wdt.h)(0x66EA6967)
+I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+I (..\BSP\ev_hc32f460_lqfp100_v2_bsp.h)(0x65151E3A)
+I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
+I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
+F (..\APP\app_uds.c)(0x66E40D4D)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\app_uds.o --omf_browse .\output\debug\app_uds.crf --depend .\output\debug\app_uds.d)
+I (..\APP\app_uds.h)(0x66CD2F67)
+I (..\APP\app_uds_cfg.h)(0x66EA8E49)
+I (../source/common.h)(0x66EA6E70)
+I (..\Hal\hal_uart_tp_cfg.h)(0x66E15F9B)
+I (..\Hal\multi_cyc_fifo.h)(0x66E16804)
+I (..\Hal\hal_tp_cfg.h)(0x66E15F94)
+I (..\APP\app_uds_alg.h)(0x66CD9C59)
+I (..\Hal\hal_tp.h)(0x66CD849F)
+I (..\Hal\hal_uart_tp.h)(0x66C6F790)
+I (..\Hal\hal_uart.h)(0x66D57C76)
+I (..\BSP\uart.h)(0x66C54EDC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+I (..\BSP\ev_hc32f460_lqfp100_v2_bsp.h)(0x65151E3A)
+I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
+I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
+I (..\APP\app_flash.h)(0x66EA8CDB)
+I (..\Hal\hal_flash_cfg.h)(0x67077A5D)
+F (..\APP\app_uds_alg.c)(0x66CD9C5B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\app_uds_alg.o --omf_browse .\output\debug\app_uds_alg.crf --depend .\output\debug\app_uds_alg.d)
+I (..\APP\app_uds_alg.h)(0x66CD9C59)
+I (../source/common.h)(0x66EA6E70)
+I (..\BSP\time.h)(0x66CEE062)
+I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+I (..\APP\AES.h)(0x66CD9BA7)
+F (..\APP\app_uds_cfg.c)(0x6709E633)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\app_uds_cfg.o --omf_browse .\output\debug\app_uds_cfg.crf --depend .\output\debug\app_uds_cfg.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (..\APP\app_uds_cfg.h)(0x66EA8E49)
+I (../source/common.h)(0x66EA6E70)
+I (..\Hal\hal_uart_tp_cfg.h)(0x66E15F9B)
+I (..\Hal\multi_cyc_fifo.h)(0x66E16804)
+I (..\Hal\hal_tp_cfg.h)(0x66E15F94)
+I (..\APP\app_uds_alg.h)(0x66CD9C59)
+I (..\APP\app_flash.h)(0x66EA8CDB)
+I (..\Hal\hal_flash_cfg.h)(0x67077A5D)
+I (..\Hal\hal_tp.h)(0x66CD849F)
+I (..\Hal\hal_uart_tp.h)(0x66C6F790)
+I (..\Hal\hal_uart.h)(0x66D57C76)
+I (..\BSP\uart.h)(0x66C54EDC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+I (..\BSP\ev_hc32f460_lqfp100_v2_bsp.h)(0x65151E3A)
+I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
+I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
+I (..\Hal\hal_wdt.h)(0x66EBCACD)
+I (..\BSP\wdt.h)(0x66EA6967)
+I (..\APP\app_boot_cfg.h)(0x66EA8CED)
+I (../source/main.h)(0x66C7FFEC)
+I (..\BSP\time.h)(0x66CEE062)
+F (..\APP\app_boot.c)(0x66F52FCE)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\app_boot.o --omf_browse .\output\debug\app_boot.crf --depend .\output\debug\app_boot.d)
+I (..\APP\app_boot.h)(0x66EA9059)
+I (../source/common.h)(0x66EA6E70)
+I (..\APP\app_boot_cfg.h)(0x66EA8CED)
+I (../source/main.h)(0x66C7FFEC)
+I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+I (..\BSP\ev_hc32f460_lqfp100_v2_bsp.h)(0x65151E3A)
+I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
+I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
+I (..\BSP\uart.h)(0x66C54EDC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\Hal\hal_uart.h)(0x66D57C76)
+I (..\Hal\hal_tp_cfg.h)(0x66E15F94)
+I (..\Hal\hal_tp.h)(0x66CD849F)
+I (..\Hal\hal_uart_tp.h)(0x66C6F790)
+I (..\Hal\hal_uart_tp_cfg.h)(0x66E15F9B)
+I (..\Hal\multi_cyc_fifo.h)(0x66E16804)
+I (..\BSP\time.h)(0x66CEE062)
+I (..\APP\app_flash.h)(0x66EA8CDB)
+I (..\Hal\hal_flash_cfg.h)(0x67077A5D)
+I (..\APP\app_uds_cfg.h)(0x66EA8E49)
+F (..\APP\app_boot_cfg.c)(0x67050C57)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../source -I ..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include -I ..\CMDrivers\cmsis\Include -I ..\BSP -I ..\APP -I ..\Drivers\inc -I ..\Hal-IE:\keilpack\HDSC\HC32A460\1.0.0\Device\Include-D__UVISION_VERSION="534" -D__DEBUG -DHC32F460 -DUSE_DDL_DRIVER-o .\output\debug\app_boot_cfg.o --omf_browse .\output\debug\app_boot_cfg.crf --depend .\output\debug\app_boot_cfg.d)
+I (..\APP\APP_boot_cfg.h)(0x66EA8CED)
+I (../source/common.h)(0x66EA6E70)
+I (../source/main.h)(0x66C7FFEC)
+I (..\Drivers\inc\hc32_ll.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_def.h)(0x65151E3A)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f4xx.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\hc32f460.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\core_cm4.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_version.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_compiler.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\cmsis_armcc.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Include\mpu_armv7.h)(0x65151E3A)
+I (..\CMDrivers\cmsis\Device\HDSC\hc32f4xx\Include\system_hc32f460.h)(0x66BEC808)
+I (../source/hc32f4xx_conf.h)(0x66EA38B7)
+I (..\Drivers\inc\hc32_ll_clk.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_efm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_fcm.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_gpio.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2c.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_i2s.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_icg.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_interrupts.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_keyscan.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_pwc.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_spi.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_sram.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmr0.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_tmra.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_usart.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_utility.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_wdt.h)(0x66EA38BE)
+I (..\BSP\ev_hc32f460_lqfp100_v2_bsp.h)(0x65151E3A)
+I (..\BSP\ev_hc32f460_lqfp100_v2.h)(0x65BDB5EA)
+I (..\Drivers\inc\hc32_ll_aos.h)(0x65151E3A)
+I (..\Drivers\inc\hc32_ll_dma.h)(0x65151E3A)
+I (..\BSP\uart.h)(0x66C54EDC)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
+I (..\Hal\hal_uart.h)(0x66D57C76)
+I (..\Hal\hal_tp_cfg.h)(0x66E15F94)
+I (..\Hal\hal_tp.h)(0x66CD849F)
+I (..\Hal\hal_uart_tp.h)(0x66C6F790)
+I (..\Hal\hal_uart_tp_cfg.h)(0x66E15F9B)
+I (..\Hal\multi_cyc_fifo.h)(0x66E16804)
+I (..\BSP\time.h)(0x66CEE062)
+I (..\Hal\hal_flash_cfg.h)(0x67077A5D)
+I (..\Hal\hal_crc.h)(0x66CDA336)
