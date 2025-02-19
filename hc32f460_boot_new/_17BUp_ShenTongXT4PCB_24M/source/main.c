@@ -2,6 +2,7 @@
 #include "main.h"
 #include "app_bootloader.h"
 #include "hal_wdt.h"
+#include "BT615.h"
 /* unlock/lock peripheral */
 
 #define EXAMPLE_PERIPH_WE								LL_PERIPH_ALL
@@ -50,6 +51,8 @@ static void BSP_Init(void)
 	BSP_XTAL32_Init();							 /* 32Khz */
     
     Uart_Init();
+
+    BT615Init();
     
     // HAL_TP_Init();
 
@@ -74,6 +77,10 @@ void SendMsgMainFun(void)
     if (TRUE == HAL_TP_DriverReadDataFromTP(8u, &aucMsgBuf[0u], &msgId, &msgLength))
     {
         Hal_Uart_Send(msgId, msgLength, aucMsgBuf, &HAL_TP_DoTxMsgSuccesfulCallback, 0u);
+
+        if(aucMsgBuf[3] == 0x78) {          //tip:NRC0x78和肯定响应中间间隔太小会导致小程序认为是同一帧。所以添加延时。
+            DDL_DelayMS(50);
+        }
     }
 }
 

@@ -555,6 +555,10 @@ static void TransferData(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgI
     }
 
     gs_RxBlockNum++;
+    //test:bug
+    if(gs_RxBlockNum == 0xB0) {
+        Ret = TRUE;
+    }
 
     /* Copy flash data in flash area */
     if ((TRUE != Flash_ProgramRegion(gs_stDowloadDataInfo.StartAddr,
@@ -650,6 +654,7 @@ static void RoutineControl(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMs
     {
         /* Write application information in flash. */
         (void)Flash_WriteFlashAppInfo();
+   
         /* Do check programming dependency */
         Ret = DoCheckProgrammingDependency();
 
@@ -697,7 +702,9 @@ static void ResetECU(struct UDSServiceInfo *i_pstUDSServiceInfo, tUdsAppMsgInfo 
     SetDownloadAppSuccessful();
     m_pstPDUMsg->pfUDSTxMsgServiceCallBack = &DoResetMCU;
     /* Request client timeout time */
-    SetNegativeErroCode(i_pstUDSServiceInfo->SerNum, NRC_SERVICE_BUSY, m_pstPDUMsg);
+    // SetNegativeErroCode(i_pstUDSServiceInfo->SerNum, NRC_SERVICE_BUSY, m_pstPDUMsg);
+    m_pstPDUMsg->xDataLen = 1;
+    m_pstPDUMsg->aDataBuf[0u] = i_pstUDSServiceInfo->SerNum + 0x40u;
 }
 
 /* Read data by identifier  #22服务读数据 */
@@ -705,21 +712,28 @@ static void ReadDataByIdentifier(struct UDSServiceInfo *i_pstUDSServiceInfo, tUd
 {
     uint8_t RequestSubfunction = 0u;
     tAPPType newestAPP;
+    tAppInfo app_version;
     RequestSubfunction = m_pstPDUMsg->aDataBuf[1u];
     m_pstPDUMsg->aDataBuf[0u] = i_pstUDSServiceInfo->SerNum + 0x40u;
     m_pstPDUMsg->aDataBuf[1] = RequestSubfunction;
-    m_pstPDUMsg->xDataLen = 3;
+    
     /* Sub function */
     switch (RequestSubfunction)
     {
         case 0x01:
             /* 读取版本号 */
+            m_pstPDUMsg->xDataLen = 3;
             newestAPP =  Flash_GetNewestAPPType();
             m_pstPDUMsg->aDataBuf[2] = newestAPP;
             break;
 
         case 0x02:
             /* 读取分区的刷写次数 */
+            app_version = Flash_GetAPPVersion();
+            m_pstPDUMsg->xDataLen = 4;
+            m_pstPDUMsg->aDataBuf[2] = app_version.A_infoCnt;
+            m_pstPDUMsg->aDataBuf[3] = app_version.B_infoCnt;
+            break;
         default:
             SetNegativeErroCode(i_pstUDSServiceInfo->SerNum, NRC_SUBFUNCTION_NOT_SUPPORTED, m_pstPDUMsg);
             break;
@@ -989,8 +1003,13 @@ static uint8_t IsWriteFingerprintRight(const tUdsAppMsgInfo *m_pstPDUMsg)
 /* Is download data address valid? */
 static uint8_t IsDownloadDataAddrValid(const uint32_t i_DataAddr)
 {
-    //todo:
-    return TRUE;
+    uint8_t ret = TRUE;
+    if(i_DataAddr != APP_A_START_ADDR && i_DataAddr != APP_B_START_ADDR && i_DataAddr != FLASH_DRV_START_ADDR) {
+        ret = FALSE;
+    } else {
+        ret = TRUE;
+    }
+    return ret; 
 }
 
 /* Is download data len valid? */

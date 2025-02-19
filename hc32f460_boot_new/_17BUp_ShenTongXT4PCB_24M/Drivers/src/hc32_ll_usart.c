@@ -291,7 +291,6 @@ static int32_t USART_WaitStatus(const CM_USART_TypeDef *USARTx,
             i32Ret = LL_ERR_TIMEOUT;
             break;
         }
-
         u32To++;
     }
 
@@ -1266,9 +1265,17 @@ void USART_SetHWFlowControl(CM_USART_TypeDef *USARTx, uint32_t u32HWFlowControl)
  *           @arg CM_USARTx:            USART unit instance register base
  * @retval Receive data
  */
+
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+
 uint16_t USART_ReadData(const CM_USART_TypeDef *USARTx)
 {
     DDL_ASSERT(IS_USART_UNIT(USARTx));
+
+    // while (READ_BIT(USARTx->SR, USART_SR_RXNE) == RESET)
+    // {
+    //     return READ_REG16(USARTx->RDR);
+    // }
 
     return READ_REG16(USARTx->RDR);
 }

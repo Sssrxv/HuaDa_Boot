@@ -30,6 +30,10 @@ typedef struct
  */
 boolean HAL_FLASH_RegisterFlashAPI(tFlashOperateAPI *o_pstFlashOperateAPI);
 
+boolean HAL_FLASH_ReadData_Extern(const uint32 i_startAddr,
+                                  const uint32 i_readLen,
+                                  uint8 *o_pDataBuf);
+
 #endif /* FLASH_HAL_H_ */
 
 /* -------------------------------------------- END OF FILE -------------------------------------------- */

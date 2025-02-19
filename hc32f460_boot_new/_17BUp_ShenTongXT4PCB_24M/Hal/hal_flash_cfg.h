@@ -29,8 +29,7 @@
 #define APP_B_END_ADDR                  0x0007C000u     
 
 #define APP_B_INFO_START_ADDR           0x0007C000u
-#define APP_B_INFO_END_ADDR             0x0007E000u  
-
+#define APP_B_INFO_END_ADDR             0x0007E000u
 
 #define APP_VECTOR_TABLE_OFFSET (0x000u) /* Vector table offset from gs_astBlockNumA/B */
 #define RESET_HANDLER_OFFSET    (4u)     /* From top vector table to reset handle */

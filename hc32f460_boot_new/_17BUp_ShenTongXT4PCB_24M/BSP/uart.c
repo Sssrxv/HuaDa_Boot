@@ -7,17 +7,35 @@ static uint8_t g_msg_buff[MSG_MAX_LENGTH] = {0};
 /******************************/
 static void USART_RxError_IrqCallback(void);
 static void USART_RxFull_IrqCallback(void);
+
 static void BT615_PWR_Hw_Init(void);
 static void INTC_IrqInstalHandler(const stc_irq_signin_config_t *pstcConfig, uint32_t u32Priority);
 
 static FrameReceivedCallback gs_UartRxMsgCallBack = NULL_PTR;
+
+static uint8 g_msg41 = 0;
+//test:bug
+static uint8_t Compare_Received_Data(uint8_t* received)
+{
+    uint8_t target_data[9] = {0x4c, 0x04, 0x31, 0x01, 0xFF, 0x01, 0xAA, 0xAA, 0xAA};
+
+    for (uint8_t i = 0; i < MSG_MAX_LENGTH; i++)
+    {
+        if (received[i] != target_data[i])
+        {
+            return FALSE;
+        }
+    }
+
+    return TRUE;
+}
 
 void Uart_Init(void)
 {
     stc_usart_uart_init_t stcUartInit;
     stc_irq_signin_config_t stcIrqSigninConfig;
 
-    BT615_PWR_Hw_Init();
+    // BT615_PWR_Hw_Init();
     
     /* Configure USART RX/TX pin. */
     GPIO_SetFunc(USART_RX_PORT, USART_RX_PIN, USART_RX_GPIO_FUNC);
@@ -52,7 +70,7 @@ void Uart_Init(void)
     INTC_IrqInstalHandler(&stcIrqSigninConfig, DDL_IRQ_PRIO_DEFAULT);
 
     /* Enable RX function */
-    USART_FuncCmd(USART_UNIT, (USART_RX | USART_INT_RX | USART_TX), ENABLE);	
+    USART_FuncCmd(USART_UNIT, (USART_RX | USART_INT_RX | USART_TX), ENABLE);
 }
 
 void RegisterFrameReceivedCallback(FrameReceivedCallback callback)
@@ -92,6 +110,10 @@ void Uart_Rx_Message(uart_msgbuff_t* data)
         message_data.data[i] = g_msg_buff[i+1];
     }
 
+    if(Compare_Received_Data(message_data.data)) {
+        message_data.dataLen =  MSG_DATA_LENGTH;
+    }
+    
     message_data.dataLen =  MSG_DATA_LENGTH;
 
     *data = message_data;
@@ -119,8 +141,10 @@ static void USART_RxFull_IrqCallback(void)
     static uint8_t data_len = 0;
 
     g_msg_buff[data_len++] = (uint8_t)USART_ReadData(USART_UNIT);
-    if(data_len == 9) {
+
+    if(data_len == 18) {
         data_len = 0;
+  
         if (gs_UartRxMsgCallBack != NULL) {
             gs_UartRxMsgCallBack(); // 触发回调，通知 HAL 层数据接收完成
         }

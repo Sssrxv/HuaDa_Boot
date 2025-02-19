@@ -15,33 +15,64 @@
 #include "ev_hc32f460_lqfp100_v2_bsp.h"
 #include "common.h"
 
-#define NEED_USART_LOG 1								/* 0:不开启USART LOG  1:开启USART LOG */
+#define NEED_USART_LOG 0								/* 0:不开启USART LOG  1:开启USART LOG */
+#define PC_ON 1
+#define PC_OFF 0	
 
 /* USART RX/TX pin definition */
-#define USART_RX_PORT                   (GPIO_PORT_C)//(GPIO_PORT_B)   		/* PB9: USART4_RX */
-#define USART_RX_PIN                    (GPIO_PIN_11)//(GPIO_PIN_13)			//(GPIO_PIN_09)
+#if PC_OFF
+#define USART_RX_PORT                   (GPIO_PORT_E)//(GPIO_PORT_B)   		/* PB9: USART4_RX */
+#define USART_RX_PIN                    (GPIO_PIN_12)//(GPIO_PIN_13)			//(GPIO_PIN_09)
 #define USART_RX_GPIO_FUNC              (GPIO_FUNC_33)//(GPIO_FUNC_37)
 
-#define USART_TX_PORT                   (GPIO_PORT_C)//(GPIO_PORT_B)			//(GPIO_PORT_E)   /* PE6: USART4_TX */
-#define USART_TX_PIN                    (GPIO_PIN_10)//(GPIO_PIN_12)			//GPIO_PIN_06)
+#define USART_TX_PORT                   (GPIO_PORT_E)//(GPIO_PORT_B)			//(GPIO_PORT_E)   /* PE6: USART4_TX */
+#define USART_TX_PIN                    (GPIO_PIN_13)//(GPIO_PIN_12)			//GPIO_PIN_06)
 #define USART_TX_GPIO_FUNC              (GPIO_FUNC_32)//(GPIO_FUNC_36)
 
 /* USART unit definition */
-#define USART_UNIT                      (CM_USART1)//(CM_USART4)
-#define USART_FCG_ENABLE()              (FCG_Fcg1PeriphClockCmd(FCG1_PERIPH_USART1, ENABLE))//(FCG_Fcg1PeriphClockCmd(FCG1_PERIPH_USART4, ENABLE))
+#define USART_UNIT                      (CM_USART3)//(CM_USART4)
+#define USART_FCG_ENABLE()              (FCG_Fcg1PeriphClockCmd(FCG1_PERIPH_USART3, ENABLE))//(FCG_Fcg1PeriphClockCmd(FCG1_PERIPH_USART4, ENABLE))
 
 /* USART interrupt definition */
 #define USART_RX_ERR_IRQn               (INT000_IRQn)
-#define USART_RX_ERR_INT_SRC            (INT_SRC_USART1_EI)//(INT_SRC_USART4_EI)
+#define USART_RX_ERR_INT_SRC            (INT_SRC_USART3_EI)//(INT_SRC_USART4_EI)
 
 #define USART_RX_FULL_IRQn              (INT001_IRQn)
-#define USART_RX_FULL_INT_SRC           (INT_SRC_USART1_RI)
+#define USART_RX_FULL_INT_SRC           (INT_SRC_USART3_RI)
 
 #define USART_TX_EMPTY_IRQn             (INT002_IRQn)
-#define USART_TX_EMPTY_INT_SRC          (INT_SRC_USART1_TI)
+#define USART_TX_EMPTY_INT_SRC          (INT_SRC_USART3_TI)
 
 #define USART_TX_CPLT_IRQn              (INT003_IRQn)
 #define USART_TX_CPLT_INT_SRC           (INT_SRC_USART4_TCI)
+
+#else
+#define USART_RX_PORT                   (GPIO_PORT_C)//(GPIO_PORT_B)   		/* PB9: USART4_RX */
+#define USART_RX_PIN                    (GPIO_PIN_11)//(GPIO_PIN_13)			//(GPIO_PIN_09)
+#define USART_RX_GPIO_FUNC              (GPIO_FUNC_37)//(GPIO_FUNC_37)
+
+#define USART_TX_PORT                   (GPIO_PORT_C)//(GPIO_PORT_B)			//(GPIO_PORT_E)   /* PE6: USART4_TX */
+#define USART_TX_PIN                    (GPIO_PIN_10)//(GPIO_PIN_12)			//GPIO_PIN_06)
+#define USART_TX_GPIO_FUNC              (GPIO_FUNC_36)//(GPIO_FUNC_36)
+
+/* USART unit definition */
+#define USART_UNIT                      (CM_USART2)//(CM_USART4)
+#define USART_FCG_ENABLE()              (FCG_Fcg1PeriphClockCmd(FCG1_PERIPH_USART2, ENABLE))//(FCG_Fcg1PeriphClockCmd(FCG1_PERIPH_USART4, ENABLE))
+
+/* USART interrupt definition */
+#define USART_RX_ERR_IRQn               (INT000_IRQn)
+#define USART_RX_ERR_INT_SRC            (INT_SRC_USART2_EI)//(INT_SRC_USART4_EI)
+
+#define USART_RX_FULL_IRQn              (INT001_IRQn)
+#define USART_RX_FULL_INT_SRC           (INT_SRC_USART2_RI)
+
+#define USART_TX_EMPTY_IRQn             (INT002_IRQn)
+#define USART_TX_EMPTY_INT_SRC          (INT_SRC_USART2_TI)
+
+#define USART_TX_CPLT_IRQn              (INT003_IRQn)
+#define USART_TX_CPLT_INT_SRC           (INT_SRC_USART4_TCI)
+
+#endif
 
 /* 关于蓝牙和串口复用的问题需要关闭蓝牙 */
 #define BT615_PWR_OFF										GPIO_SetPins(BT615_PWR_PORT,BT615_PWR_PIN);

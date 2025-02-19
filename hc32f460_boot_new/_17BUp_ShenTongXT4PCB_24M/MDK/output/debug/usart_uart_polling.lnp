@@ -49,6 +49,7 @@
 ".\output\debug\time.o"
 ".\output\debug\flash.o"
 ".\output\debug\wdt.o"
+".\output\debug\bt615.o"
 ".\output\debug\hal_tp_cfg.o"
 ".\output\debug\hal_uart.o"
 ".\output\debug\hal_uart_tp_cfg.o"

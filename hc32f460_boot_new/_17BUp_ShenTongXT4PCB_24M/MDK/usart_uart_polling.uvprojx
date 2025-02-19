@@ -653,6 +653,11 @@
               <FileType>1</FileType>
               <FilePath>..\BSP\wdt.c</FilePath>
             </File>
+            <File>
+              <FileName>BT615.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\BT615.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -1402,6 +1407,11 @@
               <FileName>wdt.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\wdt.c</FilePath>
+            </File>
+            <File>
+              <FileName>BT615.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\BSP\BT615.c</FilePath>
             </File>
           </Files>
         </Group>

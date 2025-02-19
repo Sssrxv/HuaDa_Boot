@@ -17,6 +17,7 @@
         "app_boot.h": "c",
         "app_boot_cfg.h": "c",
         "wdt.h": "c",
-        "functional": "c"
+        "functional": "c",
+        "hc32_ll_interrupts.h": "c"
     }
 }

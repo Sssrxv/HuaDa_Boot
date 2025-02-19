@@ -89,8 +89,8 @@ typedef double float64_t;
 typedef unsigned int uaddr_t;
 
 /* -------------------- Global interrupt define -------------------- */
-// #define DisableAllInterrupts() __enable_irq()
-// #define EnableAllInterrupts() __disable_irq()
+// #define disableAllInterrupts() __disable_irq()
+// #define enableAllInterrupts() __enable_irq()
 
 #define DisableAllInterrupts()
 #define EnableAllInterrupts()

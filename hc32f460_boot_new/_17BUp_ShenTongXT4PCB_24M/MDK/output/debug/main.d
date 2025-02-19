@@ -60,3 +60,4 @@
 .\output\debug\main.o: ..\Hal\hal_wdt.h
 .\output\debug\main.o: ..\BSP\wdt.h
 .\output\debug\main.o: ../source/common.h
+.\output\debug\main.o: ..\BSP\BT615.h

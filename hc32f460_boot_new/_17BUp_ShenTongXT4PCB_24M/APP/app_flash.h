@@ -14,6 +14,12 @@
 /* Invalid UDS services ID */
 #define INVALID_UDS_SERVICES_ID (0xFFu)
 
+typedef struct  
+{
+    uint8_t A_infoCnt;
+    uint8_t B_infoCnt;
+}tAppInfo;
+
 /* 数据下载的状态 */
 typedef enum
 {
@@ -63,5 +69,6 @@ uint8_t Flash_ProgramRegion(const uint32_t i_addr,
                           const uint32_t i_dataLen);
                           
 uint32 Flash_GetResetHandlerAddr(void);
+tAppInfo Flash_GetAPPVersion();
 
 #endif /* FLS_APP_H_ */

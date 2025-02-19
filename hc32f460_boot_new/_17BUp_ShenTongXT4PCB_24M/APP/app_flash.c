@@ -227,6 +227,30 @@ static uint8_t FlashErase(boolean *o_pbIsOperateFinsh);
 static uint8 FlashChecksum(boolean *o_pbIsOperateFinsh);
 static uint8 FlashWrite(boolean *o_pbIsOperateFinsh);
 
+tAppInfo Flash_GetAPPVersion()
+{
+    uint8_t A_AppInfoCnt[1] = {0};
+    uint8_t B_AppInfoCnt[1] = {0};
+
+    tAppInfo app_version;
+
+    /* 正式版本可用这个形式，不过需要在下载完一边数据之后才可用 */
+    #if 0
+    if (NULL_PTR != gs_stFlashDownloadInfo.stFlashOperateAPI.pfProgramData) {    
+        gs_stFlashDownloadInfo.stFlashOperateAPI.pfReadFlashData(APP_A_INFO_START_ADDR+4 ,1, A_AppInfoCnt);
+        gs_stFlashDownloadInfo.stFlashOperateAPI.pfReadFlashData(APP_B_INFO_START_ADDR+4 ,1, B_AppInfoCnt);
+    }
+    #endif
+
+    HAL_FLASH_ReadData_Extern(APP_A_INFO_START_ADDR+3 ,1, A_AppInfoCnt);
+    HAL_FLASH_ReadData_Extern(APP_B_INFO_START_ADDR+3 ,1, B_AppInfoCnt);
+
+    app_version.A_infoCnt = *A_AppInfoCnt;
+    app_version.B_infoCnt = *B_AppInfoCnt;
+    
+    return app_version;
+}
+
 /* Init flash download */
 void Flash_InitDowloadInfo(void)
 {
@@ -403,13 +427,11 @@ uint8 Flash_WriteFlashAppInfo(void)
             /* 对APP信息区域进行擦除 */
             if(oldAppType == APP_A_TYPE) {
                 result = gs_stFlashDownloadInfo.stFlashOperateAPI.pfEraserSecotr(APP_A_INFO_START_ADDR, 1u);
-
                 result = gs_stFlashDownloadInfo.stFlashOperateAPI.pfProgramData(APP_A_INFO_START_ADDR,
                         (uint8 *)pAppStatusPtr,
                         sizeof(tAppFlashStatus)); // 将应用程序状态结构体写入Flash
             } else {
                 result = gs_stFlashDownloadInfo.stFlashOperateAPI.pfEraserSecotr(APP_B_INFO_START_ADDR, 1u);
-
                 result = gs_stFlashDownloadInfo.stFlashOperateAPI.pfProgramData(APP_B_INFO_START_ADDR,
                         (uint8 *)pAppStatusPtr,
                         sizeof(tAppFlashStatus)); // 将应用程序状态结构体写入Flash

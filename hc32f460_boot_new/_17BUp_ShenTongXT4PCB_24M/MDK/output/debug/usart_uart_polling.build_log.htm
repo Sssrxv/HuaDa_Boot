@@ -21,13 +21,48 @@ Target DLL:      Segger\JL2CM3.dll V2.99.38.0
 Dialog DLL:      TCM.DLL V1.48.0.0
  
 <h2>Project:</h2>
-E:\bootloader\HuaDa\develop\HuaDa_boot\hc32f460_boot_new\_17BUp_ShenTongXT4PCB_24M\MDK\usart_uart_polling.uvprojx
-Project File Date:  09/18/2024
+E:\bootloader\HuaDa\develop\HuaDa_boot\me\test\HuaDa_boot\hc32f460_boot_new\_17BUp_ShenTongXT4PCB_24M\MDK\usart_uart_polling.uvprojx
+Project File Date:  01/23/2025
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'usart_uart_polling_Debug'
-".\output\debug\usart_uart_polling.axf" - 0 Error(s), 0 Warning(s).
+compiling hal_uart.c...
+compiling hal_uart_tp_cfg.c...
+compiling hal_tp.c...
+compiling main.c...
+..\source\main.c(21): warning:  #177-D: function "IAP_JumpToApp"  was declared but never referenced
+  static void IAP_JumpToApp(uint32_t u32Addr)
+..\source\main.c: 1 warning, 0 errors
+compiling app_bootloader.c...
+..\APP\app_flash.h(72): warning:  #1295-D: Deprecated declaration Flash_GetAPPVersion - give arg types
+  tAppInfo Flash_GetAPPVersion();
+..\APP\app_bootloader.c: 1 warning, 0 errors
+compiling app_boot.c...
+..\APP\app_flash.h(72): warning:  #1295-D: Deprecated declaration Flash_GetAPPVersion - give arg types
+  tAppInfo Flash_GetAPPVersion();
+..\APP\app_boot.c: 1 warning, 0 errors
+compiling app_uds.c...
+..\APP\app_flash.h(72): warning:  #1295-D: Deprecated declaration Flash_GetAPPVersion - give arg types
+  tAppInfo Flash_GetAPPVersion();
+..\APP\app_uds.c: 1 warning, 0 errors
+compiling uart.c...
+..\BSP\uart.c(166): warning:  #177-D: function "BT615_PWR_Hw_Init"  was declared but never referenced
+  static void BT615_PWR_Hw_Init(void)
+..\BSP\uart.c(16): warning:  #177-D: variable "g_msg41"  was declared but never referenced
+  static uint8 g_msg41 = 0;
+..\BSP\uart.c: 2 warnings, 0 errors
+compiling app_boot_cfg.c...
+compiling app_uds_cfg.c...
+..\APP\app_flash.h(72): warning:  #1295-D: Deprecated declaration Flash_GetAPPVersion - give arg types
+  tAppInfo Flash_GetAPPVersion();
+..\APP\app_uds_cfg.c(88): warning:  #177-D: function "IsSecurityRequestLockTimeout"  was declared but never referenced
+  static uint8_t IsSecurityRequestLockTimeout(void)
+..\APP\app_uds_cfg.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=34104 RO-data=3836 RW-data=136 ZI-data=22464  
+FromELF: creating hex file...
+".\output\debug\usart_uart_polling.axf" - 0 Error(s), 8 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -40,7 +75,7 @@ Package Vendor: HDSC
   E:\keilpack\HDSC\HC32A460\1.0.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:04
 </pre>
 </body>
 </html>

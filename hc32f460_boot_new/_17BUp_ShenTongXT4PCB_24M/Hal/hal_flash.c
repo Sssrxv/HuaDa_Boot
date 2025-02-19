@@ -184,3 +184,14 @@ boolean HAL_FLASH_RegisterFlashAPI(tFlashOperateAPI *o_pstFlashOperateAPI)
 
     return result;
 }
+
+/* 对外单独开放读取信息的接口测试的时候用正式版本需要删除 */
+boolean HAL_FLASH_ReadData_Extern(const uint32 i_startAddr,
+                                  const uint32 i_readLen,
+                                  uint8 *o_pDataBuf)
+{
+    //FLSDebugPrintf("\n %s\n", __func__);
+    ReadFlashMemory(i_startAddr, i_readLen, o_pDataBuf);
+    return TRUE;
+}
+
